@@ -3,15 +3,12 @@ import { Helmet } from "react-helmet"
 
 import Layout from "../components/layout";
 
-// import '../css/blog-post.css'; // make it pretty!
 
-export default function Template({
-  data, // this prop will be injected by the GraphQL query we'll write in a bit
-}) {
-  const { markdownRemark: post } = data // data.markdownRemark holds your post data
+export default function Template({ data }) {
+  const { markdownRemark: post } = data
   return (
     <Layout>
-        <Helmet title={`Your Blog Name - ${post.frontmatter.title}`} />
+        <Helmet title={`${post.frontmatter.title} | Leroy Rosales`} />
         <section className="custom-container">
             <h1>{post.frontmatter.title}</h1>
             <div
