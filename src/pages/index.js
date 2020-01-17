@@ -14,7 +14,7 @@ library.add(fab, faEnvelope, faGithub, faLinkedin)
 const IndexPage = () => (
   <Layout>
     <SEO title="Home" />
-    <p>Leroy Rosales is a front-end web developer in Austin, Texas. He focuses mainly on providing web development, website maintenance, and WordPress development.</p>
+    <p className="text-2xl leading-tight">Leroy Rosales is a front-end web developer in Austin, Texas. He focuses on providing web development, website maintenance, and WordPress development.</p>
   </Layout>
 )
 
