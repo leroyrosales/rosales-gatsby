@@ -2,6 +2,12 @@
 title: "Innealta Capital"
 path: "/innealta"
 featuredImage: "../images/Innealta-Capital-300x284.jpg"
+siteURL: "/sites/innealta"
 ---
 
-neumos gatsby post
+Built with:
+
+- WordPress
+- Genesis Framework
+- Advanced Custom Fields
+- Chart.js

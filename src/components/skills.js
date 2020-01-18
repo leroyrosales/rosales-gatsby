@@ -5,8 +5,8 @@ import React from "react"
 const Skills = () => (
 
     (
-      <section className="py-8">
-        <div className="custom-container mx-auto flex flex-col md:flex-row flex-wrap">
+      <section className="py-10">
+        <div className="custom-container mx-auto flex flex-col md:flex-row flex-wrap px-4 md:px-0">
           <div class="md:w-1/3">
             <h4>Proficient with:</h4>
             <ul className="list-disc leading-none">

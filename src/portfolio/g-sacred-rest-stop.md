@@ -2,6 +2,11 @@
 title: "Sacred Rest Stop"
 path: "/sacred-rest-stop"
 featuredImage: "../images/SacredRest-300x284.png"
+siteURL: "/sites/sacredreststop"
 ---
 
-sacred rest stop gatsby post
+Built with:
+
+- WordPress
+- Advanced Custom Fields
+- Bootstrap

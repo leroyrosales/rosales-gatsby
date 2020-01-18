@@ -2,6 +2,11 @@
 title: "J. Celeste Lay"
 path: "/j-celeste-lay"
 featuredImage: "../images/JCelesteLay.png"
+siteURL: "/sites/celeste"
 ---
 
-j celeste lay post
+Built with:
+
+- WordPress
+- Genesis Framework
+- Advanced Custom Fields

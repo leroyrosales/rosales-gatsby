@@ -29,8 +29,8 @@ const Portfolio = () => (
     `}
 
     render={data => (
-      <section className="bg-gray-100 py-8">
-        <div className="custom-container mx-auto">
+      <section className="bg-gray-100 py-10">
+        <div className="custom-container mx-auto px-4 md:px-0">
           <h2>Projects for work</h2>
           <div className="flex flex-col md:flex-row md:flex-wrap justify-between">
             {data.allMarkdownRemark.edges.map(portfolio => (
