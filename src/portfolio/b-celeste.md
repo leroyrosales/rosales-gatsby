@@ -1,7 +1,7 @@
 ---
 title: "J. Celeste Lay"
 path: "/j-celeste-lay"
-image: "JCelesteLay.png"
+featuredImage: "../images/JCelesteLay.png"
 ---
 
 j celeste lay post

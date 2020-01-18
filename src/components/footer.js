@@ -4,7 +4,7 @@ import React from "react"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 const Footer = ({ siteTitle }) => (
-  <footer className="min-h-full bg-green-800 mb-8 text-white py-10">
+  <footer className="min-h-full bg-green-800 text-white py-10">
     <div className="custom-container mx-auto flex flex-col md:flex-row justify-between">
         <div>
             <Link className="hover:opacity-75" to="/">{siteTitle}</Link>, © {new Date().getFullYear()}

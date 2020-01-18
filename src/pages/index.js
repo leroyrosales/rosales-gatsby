@@ -6,6 +6,9 @@ import Image from "../components/image"
 import SEO from "../components/seo"
 
 import Portfolio from "../components/portfolio"
+import Skills from "../components/skills"
+import People from "../components/people"
+import Resume from "../components/resume"
 
 import { library } from '@fortawesome/fontawesome-svg-core'
 import { faEnvelope } from '@fortawesome/free-solid-svg-icons'
@@ -17,9 +20,12 @@ const IndexPage = () => (
   <Layout>
     <SEO title="Home" />
     <section className="custom-container">
-      <p className="text-2xl leading-tight">Leroy Rosales is a front-end web developer in Austin, Texas. He focuses on providing web development, website maintenance, and WordPress development.</p>
+      <p className="text-2xl leading-tight">Leroy Rosales is a front-end web developer in Austin, Texas. He focuses on providing frontend web development, website maintenance, and WordPress development.</p>
     </section>
     <Portfolio/>
+    <Skills />
+    <People />
+    <Resume />
   </Layout>
 )
 
