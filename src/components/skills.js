@@ -39,6 +39,7 @@ const Skills = () => (
               <li>Python</li>
               <li>Django</li>
               <li>Webpack</li>
+              <li>Next.js</li>
             </ul>
           </div>
         </div>
