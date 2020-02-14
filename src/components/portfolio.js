@@ -30,7 +30,7 @@ const Portfolio = () => (
 
     render={data => (
       <section className="bg-gray-100 py-10">
-        <div className="custom-container mx-auto px-4 md:px-0">
+        <div className="custom-container mx-auto px-4 lg:px-0">
           <h2>Projects for work</h2>
           <div className="flex flex-col md:flex-row md:flex-wrap justify-between">
             {data.allMarkdownRemark.edges.map(portfolio => (
@@ -41,7 +41,7 @@ const Portfolio = () => (
                     className="mb-6"  
                   />
                   <h3 className="leading-none h-16 m-0">{ portfolio.node.frontmatter.title }</h3>
-                  <Link to={ portfolio.node.frontmatter.path } className="bg-green-500 text-white hover:bg-white hover:text-green-500 p-3 mt-10 mb-3 border rounded">Checkout project</Link>
+                  <Link to={ portfolio.node.frontmatter.path } className="bg-green-500 text-white hover:bg-white hover:text-green-500 p-3 mt-10 mb-3 border rounded">See more</Link>
                 </div>
               </div>
             ))}
