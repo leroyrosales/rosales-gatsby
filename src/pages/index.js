@@ -9,6 +9,7 @@ import Portfolio from "../components/portfolio"
 import Skills from "../components/skills"
 import People from "../components/people"
 import Resume from "../components/resume"
+import Intro from "../components/intro"
 
 import { library } from '@fortawesome/fontawesome-svg-core'
 import { faEnvelope, faArrowLeft } from '@fortawesome/free-solid-svg-icons'
@@ -19,9 +20,7 @@ library.add(fab, faEnvelope, faGithub, faLinkedin, faArrowLeft )
 const IndexPage = () => (
   <Layout>
     <SEO title="Home" />
-    <section className="custom-container py-10 px-4 lg:px-0">
-      <p className="text-2xl leading-tight font-medium">Howdy, I'm a front-end web developer in Austin, Texas. I focus on providing front-end web development, website maintenance, and WordPress development.</p>
-    </section>
+    <Intro/>
     <Portfolio/>
     <Skills />
     <People />
