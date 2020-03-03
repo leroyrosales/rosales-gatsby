@@ -5,7 +5,7 @@ export class Typewriter extends Component {
   render() {
     return (
    
-      <p className="block mt-4 mb-4 text-sm text-white leading-none opacity-50 font-light">I'm just a nerd that likes punk.</p>
+      <p className="block mt-4 mb-4 text-sm text-green-800 leading-none font-light">I'm just a nerd that likes punk.</p>
      
     )
   }

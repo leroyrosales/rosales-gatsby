@@ -5,7 +5,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 const Footer = ({ siteTitle }) => (
   <footer className="min-h-full bg-green-800 text-white py-10 mt-5">
-    <div className="custom-container mx-auto flex flex-col md:flex-row justify-between px-4 md:px-0">
+    <div className="custom-container mx-auto flex flex-col md:flex-row justify-between px-4 lg:px-0">
         <div className="mb-2">
             <Link className="hover:opacity-75" to="/">{siteTitle}</Link> © {new Date().getFullYear()}
         </div>

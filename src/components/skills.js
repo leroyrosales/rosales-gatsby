@@ -6,7 +6,7 @@ const Skills = () => (
 
     (
       <section className="py-10">
-        <div className="custom-container mx-auto flex flex-col md:flex-row flex-wrap px-4 md:px-0">
+        <div className="custom-container mx-auto flex flex-col md:flex-row flex-wrap px-4 lg:px-0">
           <div class="md:w-1/3">
             <h4>Proficient with:</h4>
             <ul className="list-disc leading-none">
@@ -19,7 +19,8 @@ const Skills = () => (
               <li>Bootstrap</li>
               <li>Foundation</li>
               <li>Git/Github</li>
-              <li>Twig Templating/Twig for WordPress</li>
+              <li>Twig Templating</li>
+              <li>Twig for WordPress</li>
               <li>Adobe Illustrator</li>
               <li>Adobe Photoshop</li>
             </ul>    
