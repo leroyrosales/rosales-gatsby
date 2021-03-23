@@ -1,7 +1,7 @@
 import { Link } from "gatsby"
 import PropTypes from "prop-types"
 import React from "react"
-import resume from '../files/LRosales_resume.pdf'
+import resume from '../files/LRosales_Resume.pdf'
 
 const Resume = () => (
 
