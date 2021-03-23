@@ -31,13 +31,6 @@ module.exports = {
         path: `${__dirname}/src/files`,
       },
     },
-    {
-      resolve: `gatsby-source-filesystem`,
-      options: {
-        name: `sites`,
-        path: `${__dirname}/sites`,
-      },
-    },
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     {
