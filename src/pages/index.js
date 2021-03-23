@@ -25,7 +25,6 @@ const IndexPage = () => (
     <Portfolio/>
     <Skills />
     <People />
-    <Contact />
     <Resume />
   </Layout>
 )

@@ -9,8 +9,8 @@ const Header = ({ siteTitle }) => (
     <div className="custom-container pt-2 pb-1 px-4 lg:px-0">
       <h1 className="m-0">
         <Link className="text-green-800 hover:opacity-75" to="/">👨🏾‍💻 {siteTitle}</Link>
-        <Typewriter />
       </h1>
+      <Typewriter />
     </div>
   </header>
 )

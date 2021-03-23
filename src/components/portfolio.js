@@ -36,11 +36,11 @@ const Portfolio = () => (
             {data.allMarkdownRemark.edges.map(portfolio => (
               <div className="w-full md:w-1/3 min-h-full px-2 text-center mb-3">
                 <div className="bg-white border h-full pb-6">
-                  <Img 
+                  <Img
                     fluid={ portfolio.node.frontmatter.featuredImage.childImageSharp.fluid }
-                    className="mb-6"  
+                    className="mb-4"
                   />
-                  <h3 className="leading-none h-16 m-0">{ portfolio.node.frontmatter.title }</h3>
+                  <h3 className="leading-none h-16 mb-2 p-1">{ portfolio.node.frontmatter.title }</h3>
                   <Link to={ portfolio.node.frontmatter.path } className="bg-green-500 text-white hover:bg-white hover:text-green-500 p-3 mt-10 mb-3 border rounded">See more</Link>
                 </div>
               </div>

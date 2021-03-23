@@ -15,7 +15,7 @@ const Skills = () => (
               <li>PHP</li>
               <li>Jekyll</li>
               <li>Sass/SCSS/CSS</li>
-              <li>Tailwind CSS</li>
+              <li>TailwindCSS</li>
               <li>Bootstrap</li>
               <li>Foundation</li>
               <li>Git/Github</li>
@@ -23,13 +23,14 @@ const Skills = () => (
               <li>Twig for WordPress</li>
               <li>Adobe Illustrator</li>
               <li>Adobe Photoshop</li>
-            </ul>    
+            </ul>
           </div>
           <div class="md:w-1/3">
             <h4>Comfortable with:</h4>
             <ul className="list-disc leading-none">
               <li>React</li>
               <li>Gatsby</li>
+              <li>Next.js</li>
               <li>Drupal</li>
               <li>Gulp</li>
             </ul>
@@ -40,7 +41,6 @@ const Skills = () => (
               <li>Python</li>
               <li>Django</li>
               <li>Webpack</li>
-              <li>Next.js</li>
             </ul>
           </div>
         </div>
