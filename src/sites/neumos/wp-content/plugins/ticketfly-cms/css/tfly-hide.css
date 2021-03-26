@@ -1,0 +1,21 @@
+/**
+*	Ticketfly Hide Stylesheet
+*	Version: v1.00
+*	Author: Marco Schmoecker
+**/
+
+/* list view */
+.list-view .more-info, .list-view .city-state { display: none; }
+
+/* calendar */
+.tfly-calendar .topline-info, .tfly-calendar .start-time { display:none; }
+
+/* carousel */
+#overlay-content { display: none; }
+
+/* Microformats */
+
+abbr.url, abbr.location, abbr.summary, abbr.description { display: none; }
+
+/* ?? */
+a#fancy_left, a#fancy_right { display: none!important; }

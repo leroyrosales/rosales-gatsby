@@ -1,0 +1,98 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Sacred Rest Stop - ECPv4.6.11//NONSGML v1.0//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Sacred Rest Stop
+X-ORIGINAL-URL:http://sacredreststop.org
+X-WR-CALDESC:Events for Sacred Rest Stop
+BEGIN:VEVENT
+DTSTART;TZID=UTC+0:20180408T153000
+DTEND;TZID=UTC+0:20180408T170000
+DTSTAMP:20180407T124509
+CREATED:20180301T074802Z
+LAST-MODIFIED:20180302T163737Z
+UID:101-1523201400-1523206800@sacredreststop.org
+SUMMARY:Social Justice Activist Meditation
+DESCRIPTION:Still. Alert. Aware. Together. \nCommunity Mediation for Social Justice Activists – Replenishing Our Movement from the Inside Out \nSunday\, April 8th\, 15th\, 22nd & 29th 3:30pm – 5pm\n{Please arrive with plenty of time to get settled and be ready to begin at 3:30} \nSoma Vida\n2324 E. Cesar Chavez St.\nAustin\, TX 78702 \n$15 suggested donation (sliding scale available)\nAll profit goes to Austin Justice Coalition’s – Higher Learning \nLimited to 20 participants \nEmail amira@sacredreststop.org to reserve your spot! \n
+URL:http://sacredreststop.org/event/social-justice-activist-meditation/2018-04-08/
+LOCATION:2324 E. Cesar Chavez St.\, Austin\, 78702\, United States
+GEO:30.2551638;-97.718206
+X-APPLE-STRUCTURED-LOCATION;VALUE=URI;X-ADDRESS=2324 E. Cesar Chavez St. Austin 78702 United States;X-APPLE-RADIUS=500;X-TITLE=2324 E. Cesar Chavez St.:geo:-97.718206,30.2551638
+CATEGORIES:Events
+ATTACH;FMTTYPE=image/jpeg:http://sacredreststop.org/wp-content/uploads/SRS_SocialJusticeActivistMeditation_Facebook.jpg
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;TZID=UTC+0:20180415T153000
+DTEND;TZID=UTC+0:20180415T170000
+DTSTAMP:20180407T124509
+CREATED:20180301T074802Z
+LAST-MODIFIED:20180302T163737Z
+UID:111-1523806200-1523811600@sacredreststop.org
+SUMMARY:Social Justice Activist Meditation
+DESCRIPTION:Still. Alert. Aware. Together. \nCommunity Mediation for Social Justice Activists – Replenishing Our Movement from the Inside Out \nSunday\, April 8th\, 15th\, 22nd & 29th 3:30pm – 5pm\n{Please arrive with plenty of time to get settled and be ready to begin at 3:30} \nSoma Vida\n2324 E. Cesar Chavez St.\nAustin\, TX 78702 \n$15 suggested donation (sliding scale available)\nAll profit goes to Austin Justice Coalition’s – Higher Learning \nLimited to 20 participants \nEmail amira@sacredreststop.org to reserve your spot! \n
+URL:http://sacredreststop.org/event/social-justice-activist-meditation/2018-04-15/
+LOCATION:2324 E. Cesar Chavez St.\, Austin\, 78702\, United States
+GEO:30.2551638;-97.718206
+X-APPLE-STRUCTURED-LOCATION;VALUE=URI;X-ADDRESS=2324 E. Cesar Chavez St. Austin 78702 United States;X-APPLE-RADIUS=500;X-TITLE=2324 E. Cesar Chavez St.:geo:-97.718206,30.2551638
+CATEGORIES:Events
+ATTACH;FMTTYPE=image/jpeg:http://sacredreststop.org/wp-content/uploads/SRS_SocialJusticeActivistMeditation_Facebook.jpg
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;TZID=UTC+0:20180422T153000
+DTEND;TZID=UTC+0:20180422T170000
+DTSTAMP:20180407T124509
+CREATED:20180301T074802Z
+LAST-MODIFIED:20180302T163737Z
+UID:112-1524411000-1524416400@sacredreststop.org
+SUMMARY:Social Justice Activist Meditation
+DESCRIPTION:Still. Alert. Aware. Together. \nCommunity Mediation for Social Justice Activists – Replenishing Our Movement from the Inside Out \nSunday\, April 8th\, 15th\, 22nd & 29th 3:30pm – 5pm\n{Please arrive with plenty of time to get settled and be ready to begin at 3:30} \nSoma Vida\n2324 E. Cesar Chavez St.\nAustin\, TX 78702 \n$15 suggested donation (sliding scale available)\nAll profit goes to Austin Justice Coalition’s – Higher Learning \nLimited to 20 participants \nEmail amira@sacredreststop.org to reserve your spot! \n
+URL:http://sacredreststop.org/event/social-justice-activist-meditation/2018-04-22/
+LOCATION:2324 E. Cesar Chavez St.\, Austin\, 78702\, United States
+GEO:30.2551638;-97.718206
+X-APPLE-STRUCTURED-LOCATION;VALUE=URI;X-ADDRESS=2324 E. Cesar Chavez St. Austin 78702 United States;X-APPLE-RADIUS=500;X-TITLE=2324 E. Cesar Chavez St.:geo:-97.718206,30.2551638
+CATEGORIES:Events
+ATTACH;FMTTYPE=image/jpeg:http://sacredreststop.org/wp-content/uploads/SRS_SocialJusticeActivistMeditation_Facebook.jpg
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;TZID=UTC+0:20180429T153000
+DTEND;TZID=UTC+0:20180429T170000
+DTSTAMP:20180407T124509
+CREATED:20180301T074802Z
+LAST-MODIFIED:20180302T163737Z
+UID:113-1525015800-1525021200@sacredreststop.org
+SUMMARY:Social Justice Activist Meditation
+DESCRIPTION:Still. Alert. Aware. Together. \nCommunity Mediation for Social Justice Activists – Replenishing Our Movement from the Inside Out \nSunday\, April 8th\, 15th\, 22nd & 29th 3:30pm – 5pm\n{Please arrive with plenty of time to get settled and be ready to begin at 3:30} \nSoma Vida\n2324 E. Cesar Chavez St.\nAustin\, TX 78702 \n$15 suggested donation (sliding scale available)\nAll profit goes to Austin Justice Coalition’s – Higher Learning \nLimited to 20 participants \nEmail amira@sacredreststop.org to reserve your spot! \n
+URL:http://sacredreststop.org/event/social-justice-activist-meditation/2018-04-29/
+LOCATION:2324 E. Cesar Chavez St.\, Austin\, 78702\, United States
+GEO:30.2551638;-97.718206
+X-APPLE-STRUCTURED-LOCATION;VALUE=URI;X-ADDRESS=2324 E. Cesar Chavez St. Austin 78702 United States;X-APPLE-RADIUS=500;X-TITLE=2324 E. Cesar Chavez St.:geo:-97.718206,30.2551638
+CATEGORIES:Events
+ATTACH;FMTTYPE=image/jpeg:http://sacredreststop.org/wp-content/uploads/SRS_SocialJusticeActivistMeditation_Facebook.jpg
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;TZID=UTC+0:20180515T203000
+DTEND;TZID=UTC+0:20180515T220000
+DTSTAMP:20180407T124509
+CREATED:20180228T162817Z
+LAST-MODIFIED:20180301T075205Z
+UID:11-1526416200-1526421600@sacredreststop.org
+SUMMARY:Circling Her Light in the Moonless Night
+DESCRIPTION:Calling all Austin women (and women-identified women)! Come join a candle lit 1-mile walk around Lady Bird Lake during the night of this month’s New Moon. We walk to bear kind witness to darkness and chaos. Solace\, solidarity and beauty are our intentions. \n
+URL:http://sacredreststop.org/event/circling-her-light-in-the-moonless-night/
+CATEGORIES:Events
+ATTACH;FMTTYPE=image/png:http://sacredreststop.org/wp-content/uploads/Screen-Shot-2018-02-22-at-11.28.34-AM.png
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;TZID=UTC+0:20181202T170000
+DTEND;TZID=UTC+0:20181202T210000
+DTSTAMP:20180407T124509
+CREATED:20180228T162636Z
+LAST-MODIFIED:20180228T162636Z
+UID:6-1543770000-1543784400@sacredreststop.org
+SUMMARY:Drive In Movie Magic at In the Garden Farm
+DESCRIPTION:It’s a night for the whole gang! Come for a magic show from 5-6:30pm for the six year old and under set along w/their adult friends. Movie for all at 7-9pm! Cardboard cars to sit in for the kids! Plus\, candy and popcorn! Candy and beverages for the parents and caregivers too! BYOB! What could be better? (No dogs\, please) \n
+URL:http://sacredreststop.org/event/drive-in-movie-magic-at-in-the-garden-farm/
+CATEGORIES:Events
+END:VEVENT
+END:VCALENDAR
