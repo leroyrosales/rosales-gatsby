@@ -2,7 +2,7 @@
 	Theme Name: NAOCON
 	Description: A theme for the National Academy of Construction 
 	Author: Austinite Web Design
-	Author URI: http://www.austinitewebdesign.com/
+	Author URI: https://www.austinitewebdesign.com/
 
 	Version: 1.0
 	
@@ -10,7 +10,7 @@
 	Template Version: 2.1
 
 	License: GPL-2.0+
-	License URI: http://www.opensource.org/licenses/gpl-license.php 
+	License URI: https://www.opensource.org/licenses/gpl-license.php 
 */
 
 
@@ -683,7 +683,7 @@ float:right;
 }
 
 /* Column Classes
-	Link: http://twitter.github.io/bootstrap/assets/css/bootstrap-responsive.css
+	Link: https://twitter.github.io/bootstrap/assets/css/bootstrap-responsive.css
 --------------------------------------------- */
 
 .row {
@@ -1664,7 +1664,7 @@ margin-bottom:-10%;
     max-width: 500px;
 }
 
-#buddypress #header {background:url(http://naocon.austinitewebdesign.com/wp-content/uploads/2014/12/member-header.jpg) no-repeat;}
+#buddypress #header {background:url(https://naocon.austinitewebdesign.com/wp-content/uploads/2014/12/member-header.jpg) no-repeat;}
 
 /* Dashicons
 --------------------------------------------- */
@@ -1895,7 +1895,7 @@ margin-bottom:-10%;
 .right-direction-bg:before {
     content: "";
     display: block;
-    background: url(http://naocon.austinitewebdesign.com/wp-content/uploads/2016/10/AECOM-Sutong-Bridge-Jiangsu-China.jpg) no-repeat center center;
+    background: url(https://naocon.austinitewebdesign.com/wp-content/uploads/2016/10/AECOM-Sutong-Bridge-Jiangsu-China.jpg) no-repeat center center;
     width: 220%;
     left: -60%;
     height: 100%;
@@ -1917,7 +1917,7 @@ margin-bottom:-10%;
 .future-bg:before {
     content: "";
     display: block;
-    background: url(http://naocon.austinitewebdesign.com/wp-content/uploads/2016/10/construction13.jpg) no-repeat top center;
+    background: url(https://naocon.austinitewebdesign.com/wp-content/uploads/2016/10/construction13.jpg) no-repeat top center;
     width: 220%;
     left: -60%;
     height: 100%;

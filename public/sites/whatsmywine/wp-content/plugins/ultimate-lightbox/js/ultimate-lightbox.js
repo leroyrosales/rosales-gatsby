@@ -1,5 +1,5 @@
 /* Simple JavaScript Inheritance
-* By John Resig http://ejohn.org/
+* By John Resig https://ejohn.org/
 * MIT Licensed.
 */
 // Inspired by base2 and Prototype
@@ -492,7 +492,7 @@ function EWD_ULB_Thumbnails_HTML(slides) {
 	var Slide_HTML = '';
 	jQuery(slides).each(function(index, value) {
 		Slide_HTML += '<div class="ewd-ulb-slide-thumbnail" data-slideindex="' + index + '">';
-		if (this.video == "youtube") {Slide_HTML += '<img src="http://img.youtube.com/vi/' + /[^/]*$/.exec(this.source)[0] + '/default.jpg" />';}
+		if (this.video == "youtube") {Slide_HTML += '<img src="https://img.youtube.com/vi/' + /[^/]*$/.exec(this.source)[0] + '/default.jpg" />';}
 		else {Slide_HTML += '<img src="' + this.source + '" />';}
 		Slide_HTML += '</div>';
 	});

@@ -93,7 +93,7 @@
 		}
 
 		// Smooth scrolling
-		/* from http://imakewebthings.com/jquery-waypoints/ Wicked credit to http://www.zachstronaut.com/posts/2009/01/18/jquery-smooth-scroll-bugs.html */
+		/* from https://imakewebthings.com/jquery-waypoints/ Wicked credit to https://www.zachstronaut.com/posts/2009/01/18/jquery-smooth-scroll-bugs.html */
 		var scrollElement = 'html, body';
 		jQuery('html, body').each(function () {
 			var initScrollTop = jQuery(this).attr('scrollTop');

@@ -1,9 +1,9 @@
 /*
  Theme Name: Media Choice
- Theme URI: http://mediachoice.com
+ Theme URI: https://mediachoice.com
  Description: This is the Media Choice theme created for the Genesis Framework.
  Author: Austinite Web Design
- Author URI: http://www.austinitewebdesign.com/
+ Author URI: https://www.austinitewebdesign.com/
  Version: 1.1
  Template: genesis
  Template Version: 2.4
@@ -107,7 +107,7 @@ a img.aligncenter {
  ---------------------------------------------------------------------------------------------------- */
 /* Baseline Normalize
  --------------------------------------------- */
-/* normalize.css v4.1.1 | MIT License | http://necolas.github.io/normalize.css/ */
+/* normalize.css v4.1.1 | MIT License | https://necolas.github.io/normalize.css/ */
 html {
   font-family: sans-serif;
   -ms-text-size-adjust: 100%;
@@ -1148,7 +1148,7 @@ td:first-child, th:first-child {
 }
 /* Column Classes
  --------------------------------------------- */
-/* Link: http://twitter.github.io/bootstrap/assets/css/bootstrap-responsive.css */
+/* Link: https://twitter.github.io/bootstrap/assets/css/bootstrap-responsive.css */
 .row-fluid {
   width: 100%;
   *zoom: 1;

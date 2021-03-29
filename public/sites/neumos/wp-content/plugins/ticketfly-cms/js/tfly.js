@@ -150,7 +150,7 @@ function tfly_load() {
 }
 /* location.href */
 function tfly_fbs_click(tinyurl) {
-  u=tinyurl;t=document.title;window.open('http://www.facebook.com/sharer.php?u='+encodeURIComponent(u)+'&t='+encodeURIComponent(t),'sharer','toolbar=0,status=0,width=626,height=436');
+  u=tinyurl;t=document.title;window.open('https://www.facebook.com/sharer.php?u='+encodeURIComponent(u)+'&t='+encodeURIComponent(t),'sharer','toolbar=0,status=0,width=626,height=436');
   return false;
 }
 

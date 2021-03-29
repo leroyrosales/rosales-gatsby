@@ -1,7 +1,7 @@
 /**
  * This file fixes the browser bug for skip-links: While the visual focus of the browser shifts to the element being linked to, the input focus stays where it was.
  * Affects Internet Explorer and Chrome
- * http://www.nczonline.net/blog/2013/01/15/fixing-skip-to-content-links/
+ * https://www.nczonline.net/blog/2013/01/15/fixing-skip-to-content-links/
  *
  * @package Genesis\JS
  * @author StudioPress
