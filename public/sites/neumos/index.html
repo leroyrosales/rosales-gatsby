@@ -1,0 +1,1311 @@
+<!DOCTYPE html>
+<html lang="en-US" xmlns:fb="https://www.facebook.com/2008/fbml" xmlns:og="https://opengraphprotocol.org/schema/">
+<head>
+
+<meta charset="UTF-8"><script type="text/javascript">(window.NREUM||(NREUM={})).loader_config={xpid:"Vw8AUlNACwIBVVNWAQY="};window.NREUM||(NREUM={}),__nr_require=function(t,n,e){function r(e){if(!n[e]){var o=n[e]={exports:{}};t[e][0].call(o.exports,function(n){var o=t[e][1][n];return r(o||n)},o,o.exports)}return n[e].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<e.length;o++)r(e[o]);return r}({1:[function(t,n,e){function r(t){try{s.console&&console.log(t)}catch(n){}}var o,i=t("ee"),a=t(15),s={};try{o=localStorage.getItem("__nr_flags").split(","),console&&"function"==typeof console.log&&(s.console=!0,o.indexOf("dev")!==-1&&(s.dev=!0),o.indexOf("nr_dev")!==-1&&(s.nrDev=!0))}catch(c){}s.nrDev&&i.on("internal-error",function(t){r(t.stack)}),s.dev&&i.on("fn-err",function(t,n,e){r(e.stack)}),s.dev&&(r("NR AGENT IN DEVELOPMENT MODE"),r("flags: "+a(s,function(t,n){return t}).join(", ")))},{}],2:[function(t,n,e){function r(t,n,e,r,o){try{d?d-=1:i("err",[o||new UncaughtException(t,n,e)])}catch(s){try{i("ierr",[s,c.now(),!0])}catch(u){}}return"function"==typeof f&&f.apply(this,a(arguments))}function UncaughtException(t,n,e){this.message=t||"Uncaught error with no additional information",this.sourceURL=n,this.line=e}function o(t){i("err",[t,c.now()])}var i=t("handle"),a=t(16),s=t("ee"),c=t("loader"),f=window.onerror,u=!1,d=0;c.features.err=!0,t(1),window.onerror=r;try{throw new Error}catch(l){"stack"in l&&(t(8),t(7),"addEventListener"in window&&t(5),c.xhrWrappable&&t(9),u=!0)}s.on("fn-start",function(t,n,e){u&&(d+=1)}),s.on("fn-err",function(t,n,e){u&&(this.thrown=!0,o(e))}),s.on("fn-end",function(){u&&!this.thrown&&d>0&&(d-=1)}),s.on("internal-error",function(t){i("ierr",[t,c.now(),!0])})},{}],3:[function(t,n,e){t("loader").features.ins=!0},{}],4:[function(t,n,e){function r(t){}if(window.performance&&window.performance.timing&&window.performance.getEntriesByType){var o=t("ee"),i=t("handle"),a=t(8),s=t(7),c="learResourceTimings",f="addEventListener",u="resourcetimingbufferfull",d="bstResource",l="resource",p="-start",h="-end",m="fn"+p,w="fn"+h,v="bstTimer",y="pushState",g=t("loader");g.features.stn=!0,t(6);var b=NREUM.o.EV;o.on(m,function(t,n){var e=t[0];e instanceof b&&(this.bstStart=g.now())}),o.on(w,function(t,n){var e=t[0];e instanceof b&&i("bst",[e,n,this.bstStart,g.now()])}),a.on(m,function(t,n,e){this.bstStart=g.now(),this.bstType=e}),a.on(w,function(t,n){i(v,[n,this.bstStart,g.now(),this.bstType])}),s.on(m,function(){this.bstStart=g.now()}),s.on(w,function(t,n){i(v,[n,this.bstStart,g.now(),"requestAnimationFrame"])}),o.on(y+p,function(t){this.time=g.now(),this.startPath=location.pathname+location.hash}),o.on(y+h,function(t){i("bstHist",[location.pathname+location.hash,this.startPath,this.time])}),f in window.performance&&(window.performance["c"+c]?window.performance[f](u,function(t){i(d,[window.performance.getEntriesByType(l)]),window.performance["c"+c]()},!1):window.performance[f]("webkit"+u,function(t){i(d,[window.performance.getEntriesByType(l)]),window.performance["webkitC"+c]()},!1)),document[f]("scroll",r,{passive:!0}),document[f]("keypress",r,!1),document[f]("click",r,!1)}},{}],5:[function(t,n,e){function r(t){for(var n=t;n&&!n.hasOwnProperty(u);)n=Object.getPrototypeOf(n);n&&o(n)}function o(t){s.inPlace(t,[u,d],"-",i)}function i(t,n){return t[1]}var a=t("ee").get("events"),s=t(18)(a,!0),c=t("gos"),f=XMLHttpRequest,u="addEventListener",d="removeEventListener";n.exports=a,"getPrototypeOf"in Object?(r(document),r(window),r(f.prototype)):f.prototype.hasOwnProperty(u)&&(o(window),o(f.prototype)),a.on(u+"-start",function(t,n){var e=t[1],r=c(e,"nr@wrapped",function(){function t(){if("function"==typeof e.handleEvent)return e.handleEvent.apply(e,arguments)}var n={object:t,"function":e}[typeof e];return n?s(n,"fn-",null,n.name||"anonymous"):e});this.wrapped=t[1]=r}),a.on(d+"-start",function(t){t[1]=this.wrapped||t[1]})},{}],6:[function(t,n,e){var r=t("ee").get("history"),o=t(18)(r);n.exports=r,o.inPlace(window.history,["pushState","replaceState"],"-")},{}],7:[function(t,n,e){var r=t("ee").get("raf"),o=t(18)(r),i="equestAnimationFrame";n.exports=r,o.inPlace(window,["r"+i,"mozR"+i,"webkitR"+i,"msR"+i],"raf-"),r.on("raf-start",function(t){t[0]=o(t[0],"fn-")})},{}],8:[function(t,n,e){function r(t,n,e){t[0]=a(t[0],"fn-",null,e)}function o(t,n,e){this.method=e,this.timerDuration=isNaN(t[1])?0:+t[1],t[0]=a(t[0],"fn-",this,e)}var i=t("ee").get("timer"),a=t(18)(i),s="setTimeout",c="setInterval",f="clearTimeout",u="-start",d="-";n.exports=i,a.inPlace(window,[s,"setImmediate"],s+d),a.inPlace(window,[c],c+d),a.inPlace(window,[f,"clearImmediate"],f+d),i.on(c+u,r),i.on(s+u,o)},{}],9:[function(t,n,e){function r(t,n){d.inPlace(n,["onreadystatechange"],"fn-",s)}function o(){var t=this,n=u.context(t);t.readyState>3&&!n.resolved&&(n.resolved=!0,u.emit("xhr-resolved",[],t)),d.inPlace(t,y,"fn-",s)}function i(t){g.push(t),h&&(x?x.then(a):w?w(a):(E=-E,O.data=E))}function a(){for(var t=0;t<g.length;t++)r([],g[t]);g.length&&(g=[])}function s(t,n){return n}function c(t,n){for(var e in t)n[e]=t[e];return n}t(5);var f=t("ee"),u=f.get("xhr"),d=t(18)(u),l=NREUM.o,p=l.XHR,h=l.MO,m=l.PR,w=l.SI,v="readystatechange",y=["onload","onerror","onabort","onloadstart","onloadend","onprogress","ontimeout"],g=[];n.exports=u;var b=window.XMLHttpRequest=function(t){var n=new p(t);try{u.emit("new-xhr",[n],n),n.addEventListener(v,o,!1)}catch(e){try{u.emit("internal-error",[e])}catch(r){}}return n};if(c(p,b),b.prototype=p.prototype,d.inPlace(b.prototype,["open","send"],"-xhr-",s),u.on("send-xhr-start",function(t,n){r(t,n),i(n)}),u.on("open-xhr-start",r),h){var x=m&&m.resolve();if(!w&&!m){var E=1,O=document.createTextNode(E);new h(a).observe(O,{characterData:!0})}}else f.on("fn-end",function(t){t[0]&&t[0].type===v||a()})},{}],10:[function(t,n,e){function r(t){var n=this.params,e=this.metrics;if(!this.ended){this.ended=!0;for(var r=0;r<d;r++)t.removeEventListener(u[r],this.listener,!1);if(!n.aborted){if(e.duration=a.now()-this.startTime,4===t.readyState){n.status=t.status;var i=o(t,this.lastSize);if(i&&(e.rxSize=i),this.sameOrigin){var c=t.getResponseHeader("X-NewRelic-App-Data");c&&(n.cat=c.split(", ").pop())}}else n.status=0;e.cbTime=this.cbTime,f.emit("xhr-done",[t],t),s("xhr",[n,e,this.startTime])}}}function o(t,n){var e=t.responseType;if("json"===e&&null!==n)return n;var r="arraybuffer"===e||"blob"===e||"json"===e?t.response:t.responseText;return h(r)}function i(t,n){var e=c(n),r=t.params;r.host=e.hostname+":"+e.port,r.pathname=e.pathname,t.sameOrigin=e.sameOrigin}var a=t("loader");if(a.xhrWrappable){var s=t("handle"),c=t(11),f=t("ee"),u=["load","error","abort","timeout"],d=u.length,l=t("id"),p=t(14),h=t(13),m=window.XMLHttpRequest;a.features.xhr=!0,t(9),f.on("new-xhr",function(t){var n=this;n.totalCbs=0,n.called=0,n.cbTime=0,n.end=r,n.ended=!1,n.xhrGuids={},n.lastSize=null,p&&(p>34||p<10)||window.opera||t.addEventListener("progress",function(t){n.lastSize=t.loaded},!1)}),f.on("open-xhr-start",function(t){this.params={method:t[0]},i(this,t[1]),this.metrics={}}),f.on("open-xhr-end",function(t,n){"loader_config"in NREUM&&"xpid"in NREUM.loader_config&&this.sameOrigin&&n.setRequestHeader("X-NewRelic-ID",NREUM.loader_config.xpid)}),f.on("send-xhr-start",function(t,n){var e=this.metrics,r=t[0],o=this;if(e&&r){var i=h(r);i&&(e.txSize=i)}this.startTime=a.now(),this.listener=function(t){try{"abort"===t.type&&(o.params.aborted=!0),("load"!==t.type||o.called===o.totalCbs&&(o.onloadCalled||"function"!=typeof n.onload))&&o.end(n)}catch(e){try{f.emit("internal-error",[e])}catch(r){}}};for(var s=0;s<d;s++)n.addEventListener(u[s],this.listener,!1)}),f.on("xhr-cb-time",function(t,n,e){this.cbTime+=t,n?this.onloadCalled=!0:this.called+=1,this.called!==this.totalCbs||!this.onloadCalled&&"function"==typeof e.onload||this.end(e)}),f.on("xhr-load-added",function(t,n){var e=""+l(t)+!!n;this.xhrGuids&&!this.xhrGuids[e]&&(this.xhrGuids[e]=!0,this.totalCbs+=1)}),f.on("xhr-load-removed",function(t,n){var e=""+l(t)+!!n;this.xhrGuids&&this.xhrGuids[e]&&(delete this.xhrGuids[e],this.totalCbs-=1)}),f.on("addEventListener-end",function(t,n){n instanceof m&&"load"===t[0]&&f.emit("xhr-load-added",[t[1],t[2]],n)}),f.on("removeEventListener-end",function(t,n){n instanceof m&&"load"===t[0]&&f.emit("xhr-load-removed",[t[1],t[2]],n)}),f.on("fn-start",function(t,n,e){n instanceof m&&("onload"===e&&(this.onload=!0),("load"===(t[0]&&t[0].type)||this.onload)&&(this.xhrCbStart=a.now()))}),f.on("fn-end",function(t,n){this.xhrCbStart&&f.emit("xhr-cb-time",[a.now()-this.xhrCbStart,this.onload,n],n)})}},{}],11:[function(t,n,e){n.exports=function(t){var n=document.createElement("a"),e=window.location,r={};n.href=t,r.port=n.port;var o=n.href.split("://");!r.port&&o[1]&&(r.port=o[1].split("/")[0].split("@").pop().split(":")[1]),r.port&&"0"!==r.port||(r.port="https"===o[0]?"443":"80"),r.hostname=n.hostname||e.hostname,r.pathname=n.pathname,r.protocol=o[0],"/"!==r.pathname.charAt(0)&&(r.pathname="/"+r.pathname);var i=!n.protocol||":"===n.protocol||n.protocol===e.protocol,a=n.hostname===document.domain&&n.port===e.port;return r.sameOrigin=i&&(!n.hostname||a),r}},{}],12:[function(t,n,e){function r(){}function o(t,n,e){return function(){return i(t,[f.now()].concat(s(arguments)),n?null:this,e),n?void 0:this}}var i=t("handle"),a=t(15),s=t(16),c=t("ee").get("tracer"),f=t("loader"),u=NREUM;"undefined"==typeof window.newrelic&&(newrelic=u);var d=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],l="api-",p=l+"ixn-";a(d,function(t,n){u[n]=o(l+n,!0,"api")}),u.addPageAction=o(l+"addPageAction",!0),u.setCurrentRouteName=o(l+"routeName",!0),n.exports=newrelic,u.interaction=function(){return(new r).get()};var h=r.prototype={createTracer:function(t,n){var e={},r=this,o="function"==typeof n;return i(p+"tracer",[f.now(),t,e],r),function(){if(c.emit((o?"":"no-")+"fn-start",[f.now(),r,o],e),o)try{return n.apply(this,arguments)}finally{c.emit("fn-end",[f.now()],e)}}}};a("setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(t,n){h[n]=o(p+n)}),newrelic.noticeError=function(t){"string"==typeof t&&(t=new Error(t)),i("err",[t,f.now()])}},{}],13:[function(t,n,e){n.exports=function(t){if("string"==typeof t&&t.length)return t.length;if("object"==typeof t){if("undefined"!=typeof ArrayBuffer&&t instanceof ArrayBuffer&&t.byteLength)return t.byteLength;if("undefined"!=typeof Blob&&t instanceof Blob&&t.size)return t.size;if(!("undefined"!=typeof FormData&&t instanceof FormData))try{return JSON.stringify(t).length}catch(n){return}}}},{}],14:[function(t,n,e){var r=0,o=navigator.userAgent.match(/Firefox[\/\s](\d+\.\d+)/);o&&(r=+o[1]),n.exports=r},{}],15:[function(t,n,e){function r(t,n){var e=[],r="",i=0;for(r in t)o.call(t,r)&&(e[i]=n(r,t[r]),i+=1);return e}var o=Object.prototype.hasOwnProperty;n.exports=r},{}],16:[function(t,n,e){function r(t,n,e){n||(n=0),"undefined"==typeof e&&(e=t?t.length:0);for(var r=-1,o=e-n||0,i=Array(o<0?0:o);++r<o;)i[r]=t[n+r];return i}n.exports=r},{}],17:[function(t,n,e){n.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],18:[function(t,n,e){function r(t){return!(t&&t instanceof Function&&t.apply&&!t[a])}var o=t("ee"),i=t(16),a="nr@original",s=Object.prototype.hasOwnProperty,c=!1;n.exports=function(t,n){function e(t,n,e,o){function nrWrapper(){var r,a,s,c;try{a=this,r=i(arguments),s="function"==typeof e?e(r,a):e||{}}catch(f){l([f,"",[r,a,o],s])}u(n+"start",[r,a,o],s);try{return c=t.apply(a,r)}catch(d){throw u(n+"err",[r,a,d],s),d}finally{u(n+"end",[r,a,c],s)}}return r(t)?t:(n||(n=""),nrWrapper[a]=t,d(t,nrWrapper),nrWrapper)}function f(t,n,o,i){o||(o="");var a,s,c,f="-"===o.charAt(0);for(c=0;c<n.length;c++)s=n[c],a=t[s],r(a)||(t[s]=e(a,f?s+o:o,i,s))}function u(e,r,o){if(!c||n){var i=c;c=!0;try{t.emit(e,r,o,n)}catch(a){l([a,e,r,o])}c=i}}function d(t,n){if(Object.defineProperty&&Object.keys)try{var e=Object.keys(t);return e.forEach(function(e){Object.defineProperty(n,e,{get:function(){return t[e]},set:function(n){return t[e]=n,n}})}),n}catch(r){l([r])}for(var o in t)s.call(t,o)&&(n[o]=t[o]);return n}function l(n){try{t.emit("internal-error",n)}catch(e){}}return t||(t=o),e.inPlace=f,e.flag=a,e}},{}],ee:[function(t,n,e){function r(){}function o(t){function n(t){return t&&t instanceof r?t:t?c(t,s,i):i()}function e(e,r,o,i){if(!l.aborted||i){t&&t(e,r,o);for(var a=n(o),s=h(e),c=s.length,f=0;f<c;f++)s[f].apply(a,r);var d=u[y[e]];return d&&d.push([g,e,r,a]),a}}function p(t,n){v[t]=h(t).concat(n)}function h(t){return v[t]||[]}function m(t){return d[t]=d[t]||o(e)}function w(t,n){f(t,function(t,e){n=n||"feature",y[e]=n,n in u||(u[n]=[])})}var v={},y={},g={on:p,emit:e,get:m,listeners:h,context:n,buffer:w,abort:a,aborted:!1};return g}function i(){return new r}function a(){(u.api||u.feature)&&(l.aborted=!0,u=l.backlog={})}var s="nr@context",c=t("gos"),f=t(15),u={},d={},l=n.exports=o();l.backlog=u},{}],gos:[function(t,n,e){function r(t,n,e){if(o.call(t,n))return t[n];var r=e();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(t,n,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return t[n]=r,r}var o=Object.prototype.hasOwnProperty;n.exports=r},{}],handle:[function(t,n,e){function r(t,n,e,r){o.buffer([t],r),o.emit(t,n,e)}var o=t("ee").get("handle");n.exports=r,r.ee=o},{}],id:[function(t,n,e){function r(t){var n=typeof t;return!t||"object"!==n&&"function"!==n?-1:t===window?0:a(t,i,function(){return o++})}var o=1,i="nr@id",a=t("gos");n.exports=r},{}],loader:[function(t,n,e){function r(){if(!x++){var t=b.info=NREUM.info,n=l.getElementsByTagName("script")[0];if(setTimeout(u.abort,3e4),!(t&&t.licenseKey&&t.applicationID&&n))return u.abort();f(y,function(n,e){t[n]||(t[n]=e)}),c("mark",["onload",a()+b.offset],null,"api");var e=l.createElement("script");e.src="https://"+t.agent,n.parentNode.insertBefore(e,n)}}function o(){"complete"===l.readyState&&i()}function i(){c("mark",["domContent",a()+b.offset],null,"api")}function a(){return E.exists&&performance.now?Math.round(performance.now()):(s=Math.max((new Date).getTime(),s))-b.offset}var s=(new Date).getTime(),c=t("handle"),f=t(15),u=t("ee"),d=window,l=d.document,p="addEventListener",h="attachEvent",m=d.XMLHttpRequest,w=m&&m.prototype;NREUM.o={ST:setTimeout,SI:d.setImmediate,CT:clearTimeout,XHR:m,REQ:d.Request,EV:d.Event,PR:d.Promise,MO:d.MutationObserver};var v=""+location,y={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1044.min.js"},g=m&&w&&w[p]&&!/CriOS/.test(navigator.userAgent),b=n.exports={offset:s,now:a,origin:v,features:{},xhrWrappable:g};t(12),l[p]?(l[p]("DOMContentLoaded",i,!1),d[p]("load",r,!1)):(l[h]("onreadystatechange",o),d[h]("onload",r)),c("mark",["firstbyte",s],null,"api");var x=0,E=t(17)},{}]},{},["loader",2,10,4,3]);</script>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Neumos</title>
+<meta name="description" content="" />
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700" rel="stylesheet">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
+  
+
+ <meta name="msapplication-TileColor" content="#ffffff">
+ <meta name="msapplication-TileImage" content="wp-content/themes/neumos/mstile-144x144.png">
+ <meta name="theme-color" content="#ffffff">
+ 
+    <meta property="og:image" content="wp-content/themes/neumos/og-logo.png" />
+  <meta property="og:description" content="" />
+  	
+<script>
+dataLayer = [
+	{
+		"tfgaid": "UA-97325756-1"
+	}
+]
+</script>
+
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-TWWLNB');</script>
+<!-- End Google Tag Manager -->
+<link rel='dns-prefetch' href='https://s.w.org/' />
+
+	<script type="text/javascript">//<![CDATA[
+	// Google Analytics - Ticketfly v1
+	var _gaq = _gaq || [];
+	_gaq.push(['_setAccount','UA-97325756-1']);
+	_gaq.push(['_trackPageview']);
+	_gaq.push(['ec._setAccount', 'UA-6580485-30'],['ec._setDomainName', 'none'],['ec._setAllowLinker', true],['ec._setAllowHash', false],['ec._trackPageview']);
+	(function() {
+		var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+		ga.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'stats.g.doubleclick.net/dc.js';
+		var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+	})();
+	// End of Google Analytics - Ticketfly
+	//]]></script>
+<link rel="alternate" type="application/rss+xml" href="#" title="Upcoming Shows RSS feed" />
+<link rel="alternate" type="application/rss+xml" href="h#" title="Just Announced Shows RSS feed" />
+<link rel="profile" href="#" />
+		<script type="text/javascript">
+			window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/2.2.1\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/2.2.1\/svg\/","svgExt":".svg","source":{"concatemoji":"https:\/\/www.neumos.com\/wp-includes\/js\/wp-emoji-release.min.js?ver=4.7.4"}};
+			!function(a,b,c){function d(a){var b,c,d,e,f=String.fromCharCode;if(!k||!k.fillText)return!1;switch(k.clearRect(0,0,j.width,j.height),k.textBaseline="top",k.font="600 32px Arial",a){case"flag":return k.fillText(f(55356,56826,55356,56819),0,0),!(j.toDataURL().length<3e3)&&(k.clearRect(0,0,j.width,j.height),k.fillText(f(55356,57331,65039,8205,55356,57096),0,0),b=j.toDataURL(),k.clearRect(0,0,j.width,j.height),k.fillText(f(55356,57331,55356,57096),0,0),c=j.toDataURL(),b!==c);case"emoji4":return k.fillText(f(55357,56425,55356,57341,8205,55357,56507),0,0),d=j.toDataURL(),k.clearRect(0,0,j.width,j.height),k.fillText(f(55357,56425,55356,57341,55357,56507),0,0),e=j.toDataURL(),d!==e}return!1}function e(a){var c=b.createElement("script");c.src=a,c.defer=c.type="text/javascript",b.getElementsByTagName("head")[0].appendChild(c)}var f,g,h,i,j=b.createElement("canvas"),k=j.getContext&&j.getContext("2d");for(i=Array("flag","emoji4"),c.supports={everything:!0,everythingExceptFlag:!0},h=0;h<i.length;h++)c.supports[i[h]]=d(i[h]),c.supports.everything=c.supports.everything&&c.supports[i[h]],"flag"!==i[h]&&(c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&c.supports[i[h]]);c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&!c.supports.flag,c.DOMReady=!1,c.readyCallback=function(){c.DOMReady=!0},c.supports.everything||(g=function(){c.readyCallback()},b.addEventListener?(b.addEventListener("DOMContentLoaded",g,!1),a.addEventListener("load",g,!1)):(a.attachEvent("onload",g),b.attachEvent("onreadystatechange",function(){"complete"===b.readyState&&c.readyCallback()})),f=c.source||{},f.concatemoji?e(f.concatemoji):f.wpemoji&&f.twemoji&&(e(f.twemoji),e(f.wpemoji)))}(window,document,window._wpemojiSettings);
+		</script>
+		<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+
+<link rel='stylesheet' id='fbComments_hideWpComments-css'  href='wp-content/plugins/ticketfly-facebook/css/facebook-comments-hidewpcomments.css?ver=3.1.1' type='text/css' media='all' />
+<link rel='stylesheet' id='fbComments_displayRsvpCss-css'  href='wp-content/plugins/ticketfly-facebook/css/facebook-rsvp.css' type='text/css' media='all' />
+<link rel='stylesheet' id='fbc_rc_widgets-style-css'  href='wp-content/plugins/ticketfly-facebook/css/facebook-comments-widgets.css' type='text/css' media='all' />
+<link rel='stylesheet' id='ticketfly-site-style-css'  href='style.css' type='text/css' media='all' />
+<link rel='stylesheet' id='tflyStyleSheets-css'  href='wp-content/plugins/ticketfly-cms/style.css' type='text/css' media='all' />
+<link rel='stylesheet' id='tflyHideStyleSheets-css'  href='wp-content/plugins/ticketfly-cms/css/tfly-hide.css' type='text/css' media='all' />
+<link rel='stylesheet' id='jquery.lightbox.min.css-css'  href='wp-content/plugins/wp-jquery-lightbox/styles/lightbox.min.css' type='text/css' media='all' />
+<script type='text/javascript'>
+/* <![CDATA[ */
+var TflyFBAjax = {"ajaxurl":"\/\/www.neumos.com\/wp-admin\/admin-ajax.php"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='wp-includes/js/jquery/jquery.js'></script>
+<script type='text/javascript' src='wp-includes/js/jquery/jquery-migrate.min.js'></script>
+<script type='text/javascript' src='wp-includes/js/jquery/ui/core.min.js'></script>
+<script type='text/javascript' src='wp-includes/js/jquery/ui/widget.min.js'></script>
+<script type='text/javascript' src='wp-includes/js/jquery/ui/mouse.min.js'></script>
+<script type='text/javascript' src='wp-includes/js/jquery/ui/resizable.min.js'></script>
+<script type='text/javascript' src='wp-includes/js/jquery/ui/draggable.min.js'></script>
+<script type='text/javascript' src='wp-includes/js/jquery/ui/button.min.js'></script>
+<script type='text/javascript' src='wp-includes/js/jquery/ui/position.min.js'></script>
+<script type='text/javascript' src='wp-includes/js/jquery/ui/dialog.min.js'></script>
+<script type='text/javascript' src='wp-content/plugins/ticketfly-cms/js/tfly.js'></script>
+<link rel="canonical" href="#" />
+<link rel="alternate" type="application/json+oembed" href="#" />
+<link rel="alternate" type="text/xml+oembed" href="#" />
+<meta property='og:title' content='Neumos' />
+<meta property='og:site_name' content='Neumos' />
+<meta property='og:url' content='https://www.neumos.com/' />
+<meta property='og:type' content='website' />
+<meta property='fb:app_id' content='143383105698310' />
+<link rel="icon" href="files/2016/11/favicon.png" sizes="32x32" />
+<link rel="icon" href="files/2016/11/favicon.png" sizes="192x192" />
+<link rel="apple-touch-icon-precomposed" href="files/2016/11/favicon.png" />
+<meta name="msapplication-TileImage" content="https://www.neumos.com/files/2016/11/favicon.png" />
+
+</head>
+
+<body class="home page-template-default page page-id-83 site-id-2179">
+<div id="wrapper-header" class="hfeed site">
+            <div class="extrawidgets">
+        <aside id="text-15" class="widget widget_text">			<div class="textwidget"><div class="tfly-search ticketfly">
+<form method="get" id="searchform" action="listing/index.html">
+	<div>
+    	<input type="text" value="Enter an Artist or Event" onblur="if(this.value==''){this.value=this.defaultValue;}" onfocus="if(this.value==this.defaultValue){this.value='';}" class="textform" id="q" name="q"/>
+		<input type="submit" id="searchsubmit" value="Search" />
+	</div>
+</form>
+</div> </div>
+		</aside>        </div>
+    	<header id="masthead" class="site-header" role="banner">
+		<div class="site-branding">
+			<a href="index.html" class="logo">home</a>
+		</div>
+
+		<nav id="topnav" class="main-navigation" role="navigation">
+			<a class="skip-link screen-reader-text" href="#">Skip to content</a>
+			<div class="menu-main-container"><ul id="menu-main" class="menu"><li id="menu-item-95" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-95"><a href="#">Events</a>
+<ul class="sub-menu">
+	<li id="menu-item-203" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-203"><a href="l#">List</a></li>
+	<li id="menu-item-32" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-32"><a href="#">Calendar</a></li>
+</ul>
+</li>
+<li id="menu-item-17" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-17"><a href="#">Venues</a>
+<ul class="sub-menu">
+	<li id="menu-item-33" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-33"><a target="_blank" href="#">Barboza</a></li>
+	<li id="menu-item-34" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-34"><a target="_blank" href="#">The Runaway</a></li>
+</ul>
+</li>
+<li id="menu-item-164" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-164"><a href="#">Info</a>
+<ul class="sub-menu">
+	<li id="menu-item-50" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-50"><a href="3">FAQs</a></li>
+	<li id="menu-item-147" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-147"><a href="#">Private Parties</a></li>
+	<li id="menu-item-148" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-148"><a href="#">Internships</a></li>
+	<li id="menu-item-49" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-49"><a href="#">History</a></li>
+	<li id="menu-item-51" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-51"><a href="#">Photos</a></li>
+	<li id="menu-item-146" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-146"><a href="#">Venue Specs</a></li>
+</ul>
+</li>
+<li id="menu-item-67" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-67"><a target="_blank" href="http://neumos.bigcartel.com/">Store</a></li>
+<li id="menu-item-71" class="contact-btn menu-item menu-item-type-post_type menu-item-object-page menu-item-71"><a href="contact/index.html">Contact</a></li>
+<li id="menu-item-14" class="social-menu menu-item menu-item-type-custom menu-item-object-custom menu-item-14"><a target="_blank" href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+<li id="menu-item-13" class="social-menu menu-item menu-item-type-custom menu-item-object-custom menu-item-13"><a target="_blank" href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+<li id="menu-item-23" class="social-menu menu-item menu-item-type-custom menu-item-object-custom menu-item-23"><a target="_blank" href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+</ul></div>
+		</nav><!-- #site-navigation -->
+		
+		<!-- The overlay -->
+<div id="mobilenav" class="overlay">
+
+  <!-- Button to close the overlay navigation -->
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+
+  <!-- Overlay content -->
+	<div class="overlay-content">
+   		<div class="menu-main-container"><ul id="menu-main-1" class="menu"><li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-95"><a href="#">Events</a>
+<ul class="sub-menu">
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-203"><a href="#">List</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-32"><a href="#">Calendar</a></li>
+</ul>
+</li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-17"><a href="#">Venues</a>
+<ul class="sub-menu">
+	<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-33"><a target="_blank" href="#">Barboza</a></li>
+	<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-34"><a target="_blank" href="#">The Runaway</a></li>
+</ul>
+</li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-164"><a href="index.html#">Info</a>
+<ul class="sub-menu">
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-50"><a href="#">FAQs</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-147"><a href="#">Private Parties</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-148"><a href="#">Internships</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-49"><a href="#">History</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-51"><a href="#">Photos</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-146"><a href="#">Venue Specs</a></li>
+</ul>
+</li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-67"><a target="_blank" href="#">Store</a></li>
+<li class="contact-btn menu-item menu-item-type-post_type menu-item-object-page menu-item-71"><a href="#">Contact</a></li>
+<li class="social-menu menu-item menu-item-type-custom menu-item-object-custom menu-item-14"><a target="_blank" href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+<li class="social-menu menu-item menu-item-type-custom menu-item-object-custom menu-item-13"><a target="_blank" href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+<li class="social-menu menu-item menu-item-type-custom menu-item-object-custom menu-item-23"><a target="_blank" href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+</ul></div>    	<aside id="text-15" class="widget widget_text">			<div class="textwidget"><div class="tfly-search ticketfly">
+<form method="get" id="searchform" action="listing/index.html">
+	<div>
+    	<input type="text" value="Enter an Artist or Event" onblur="if(this.value==''){this.value=this.defaultValue;}" onfocus="if(this.value==this.defaultValue){this.value='';}" class="textform" id="q" name="q"/>
+		<input type="submit" id="searchsubmit" value="Search" />
+	</div>
+</form>
+</div> </div>
+		</aside>  	</div>
+</div>
+
+<!-- Use any element to open/show the overlay navigation menu -->
+<span onclick="openNav()" class="mobile-button"><i class="fa fa-bars" aria-hidden="true"></i></span>
+
+
+	</header><!-- #masthead -->
+
+          <div id="slider-widget">
+          <aside id="text-7" class="widget widget_text">			<div class="textwidget">
+
+		<script type="text/javascript">
+			tflyMaxCarousel = 4;
+		</script>
+
+		<div id="tfly-featured-events">
+			<ul class="images">
+						
+      		<li class="tfly-event-id-1593015 tfly-org-id-6823 tfly-venue-id-1233"><a href="#">
+
+                                    <img src="images/02-og.jpg?w=960&h=540&fit=crop&crop=top" title="Windhand" alt="Windhand" />
+                                </a></li>
+
+							
+      		<li class="tfly-event-id-1650976 tfly-org-id-6823 tfly-venue-id-1233"><a href="#">
+
+                                    <img src="images/83-og.jpg?w=960&h=540&fit=crop&crop=top" title="The Fresh Prince of Capitol Hill - A '90s Hip Hop Dance Party" alt="The Fresh Prince of Capitol Hill - A '90s Hip Hop Dance Party" />
+                                </a></li>
+
+							
+      		<li class="tfly-event-id-1641839 tfly-org-id-6823 tfly-venue-id-1233"><a href="#">
+
+                                    <img src="images/96-og.jpg?w=960&h=540&fit=crop&crop=top" title="Mount Kimbie" alt="Mount Kimbie" />
+                                </a></li>
+
+							
+      		<li class="tfly-event-id-1611495 tfly-org-id-6823 tfly-venue-id-1233"><a href="#">
+
+                                    <img src="images/14-og.jpg?w=960&h=540&fit=crop&crop=top" title="Power Trip" alt="Power Trip" />
+                                </a></li>
+
+				
+			</ul>
+
+			<ul id="overlay-content">
+							<li id="overlay-0" class="tfly-event-id-1593015 tfly-org-id-6823 tfly-venue-id-1233">
+					<h1 class="headliners"><a href="#">Windhand</a></h1>
+					<h2 class="date-venue">Thursday 4/19											<span class="venue location"> - Neumos</span>
+					</h2>
+                 					<h3 class="ticket-link"><a href="#" onclick="return tfly_openWindowGA(this);" target="_blank">Tickets</a></h3>
+                    				</li>
+											<li id="overlay-1" class="tfly-event-id-1650976 tfly-org-id-6823 tfly-venue-id-1233">
+					<h1 class="headliners"><a href="#">The Fresh Prince of Capitol Hill - A '90...</a></h1>
+					<h2 class="date-venue">Saturday 4/21											<span class="venue location"> - Neumos</span>
+					</h2>
+                 					<h3 class="ticket-link"><a href="#" onclick="return tfly_openWindowGA(this);" target="_blank">Tickets</a></h3>
+                    				</li>
+											<li id="overlay-2" class="tfly-event-id-1641839 tfly-org-id-6823 tfly-venue-id-1233">
+					<h1 class="headliners"><a href="#">Mount Kimbie</a></h1>
+					<h2 class="date-venue">Wednesday 5/16											<span class="venue location"> - Neumos</span>
+					</h2>
+                 					<h3 class="ticket-link"><a href="#" onclick="return tfly_openWindowGA(this);" target="_blank">Tickets</a></h3>
+                    				</li>
+											<li id="overlay-3" class="tfly-event-id-1611495 tfly-org-id-6823 tfly-venue-id-1233">
+					<h1 class="headliners"><a href="#">Power Trip</a></h1>
+					<h2 class="date-venue">Monday 5/28											<span class="venue location"> - Neumos</span>
+					</h2>
+                 					<h3 class="ticket-link"><a href="#" onclick="return tfly_openWindowGA(this);" target="_blank">Tickets</a></h3>
+                    				</li>
+										</ul>
+
+			<div id="grey-back"></div>
+			<div id="overlay">
+				<div class="change">
+					<h1 class="headliners"><a href="#">Windhand</a></h1>
+					<h2 class="date-venue">Thursday 4/19										<span class="venue location"> - Neumos</span>
+					</h2>
+                 					<h3 class="ticket-link"><a href="#" onclick="return tfly_openWindowGA(this);" target="_blank">Tickets</a></h3>
+                    				</div>
+								<ul class="nav">
+				</ul>
+							</div>
+		</div>
+<script type="text/javascript">
+    var carousel;
+    jQuery( document ).ready( function() { carousel = new tfly.carousel(); } );
+</script>
+</div>
+		</aside>          </div>
+<div id="below-slider-widget">
+	<div id="wrapper">
+          <aside id="text-8" class="widget widget_text">			<div class="textwidget"><div class="tfly-email-subscribe">
+<form method="get" class="signup-form" action="#">
+    <input type="hidden" name="orgId" value="6823">
+	<input type="text" onfocus="if(this.value==this.defaultValue){this.value='';}" onblur="if(this.value==''){this.value=this.defaultValue;}" value="Sign up for our email list" name="email" class="tfly-email-subscribe-text" />
+	<input type="submit" name="mysubmit" value="Submit" class="tfly-email-subscribe-submit"  />
+</form>
+</div>
+</div>
+		</aside>          </div>
+	</div><!---end #wrapper-->
+</div>
+</div><!---end #wrapper-->
+
+
+</div>
+
+<div id="wrapper" class="hfeed site">
+	<div id="content" class="site-content">
+	<div id="primary" class="content-area">
+		<main id="main" class="site-main" role="main">
+
+			
+				
+<article id="post-83" class="post-83 page type-page status-publish hentry">
+    
+     
+  	    <header class="entry-header">
+      		<h1 class="entry-title">Home</h1>
+  	    </header><!-- .entry-header -->
+        <div class="entry-content non-event">
+               
+    
+		<div class="list-view">
+	  <div class="list-view-heading"></div>
+    <div class="list-view-item tfly-event-id-1660409 tfly-org-id-6823 tfly-venue-id-1233">
+<a href="#"><img src="images/03-og.jpg?w=500&h=333" width="500" height="333" alt="SHAKE YA A$$ - All About Shaking Ur Booty" title="SHAKE YA A$$ - All About Shaking Ur Booty" /></a>
+      <div class="list-view-details vevent">
+<h2 class="topline-info">Neumos Presents</h2><h1 class="headliners summary"><a href="#">SHAKE YA A$$ - All About Shaking Ur Booty</a></h1>        <h2 class="dates">Saturday 4/7</h2>
+              <h2 class="times">
+  <span class="start dtstart"><span class="value-title" title="2018-04-07T21:00:00-07:00"></span>9:00 pm</span> </h2>
+  
+  					  <h2 class="age-restriction over-21">
+			This event is 21 and over					  </h2>
+			<h2 class="more-info"><a class="url" href="#">More Info</a></h2>
+          </div>
+		<div class="ticket-price">
+                   <h3 class="ticket-link primary-link"><a class="tickets" href="#" onclick="return tfly_openWindowGA(this);" target="_blank">Tickets</a></h3>
+					       <h3 class="price-range">
+			 $5.00       </h3>
+	      </div>
+    </div>
+    <div class="list-view-item alt tfly-event-id-1667351 tfly-org-id-6823 tfly-venue-id-1233">
+<a href="event/1667351-titos-21st-birthday-party-ft-seattle/index.html"><img src="images/85-og.jpg?w=500&h=335" width="500" height="335" alt="Tito&#039;s 21st Birthday Party ft. STRFKR" title="Tito&#039;s 21st Birthday Party ft. STRFKR" /></a>
+      <div class="list-view-details vevent">
+<h2 class="topline-info">Tito's & Neumos Present</h2><h1 class="headliners summary"><a href="#">Sold Out: Tito's 21st Birthday Party ft. STRFKR</a></h1><h2 class="supports description"><a href="event/1667351-titos-21st-birthday-party-ft-seattle/index.html">Double Sunrise Club</a></h2>        <h2 class="dates">Sunday 4/8</h2>
+              <h2 class="times">
+  <span class="start dtstart"><span class="value-title" title="2018-04-08T20:00:00-07:00"></span>8:00 pm</span> </h2>
+  
+  					  <h2 class="age-restriction over-21">
+			This event is 21 and over					  </h2>
+			<h2 class="more-info"><a class="url" href="#">More Info</a></h2>
+          </div>
+		<div class="ticket-price">
+<h3 class="ticket-link lyte-link"><a class="tickets" href="#"  target="_blank">Find fan tickets</a></h3>       <h3 class="price-range">
+			 $10.00       </h3>
+	      </div>
+    </div>
+    <div class="list-view-item alt tfly-event-id-1638093 tfly-org-id-6823 tfly-venue-id-1233">
+<a href="event/1638093-marc-e-bassy-seattle/index.html"><img src="images/85-og.jpg?w=500&h=333" width="500" height="333" alt="Marc E. Bassy" title="Marc E. Bassy" /></a>
+      <div class="list-view-details vevent">
+<h2 class="topline-info">Neumos Presents: Gossip Columns Tour</h2><h1 class="headliners summary"><a href="#">Sold Out: Marc E. Bassy</a></h1><h2 class="supports description"><a href="#">Rexx Life Raj, Gianni Taylor</a></h2>        <h2 class="dates">Tuesday 4/10</h2>
+              <h2 class="times">
+  <span class="start dtstart"><span class="value-title" title="2018-04-10T20:00:00-07:00"></span>8:00 pm</span> </h2>
+  
+  					  <h2 class="age-restriction all-ages">
+			This event is all ages					  </h2>
+			<h2 class="more-info"><a class="url" href="#">More Info</a></h2>
+          </div>
+		<div class="ticket-price">
+<h3 class="ticket-link lyte-link"><a class="tickets" href="#"  target="_blank">Find fan tickets</a></h3>       <h3 class="price-range">
+			 $22.00 - $60.00       </h3>
+	      </div>
+    </div>
+    <div class="list-view-item tfly-event-id-1655111 tfly-org-id-6823 tfly-venue-id-1233">
+<a href="event/1655111-jaden-smith-vision-tour-seattle/index.html"><img src="images/66-og.jpg?w=500&h=333" width="500" height="333" alt="Jaden Smith: Vision Tour" title="Jaden Smith: Vision Tour" /></a>
+      <div class="list-view-details vevent">
+<h2 class="topline-info">Neumos Presents</h2><h1 class="headliners summary"><a href="#">Sold Out: Jaden Smith: Vision Tour</a></h1>        <h2 class="dates">Wednesday 4/11</h2>
+              <h2 class="times">
+  <span class="start dtstart"><span class="value-title" title="2018-04-11T20:00:00-07:00"></span>8:00 pm</span> </h2>
+  
+  					  <h2 class="age-restriction all-ages">
+			This event is all ages					  </h2>
+			<h2 class="more-info"><a class="url" href="#">More Info</a></h2>
+          </div>
+		<div class="ticket-price">
+<h3 class="ticket-link lyte-link"><a class="tickets" href="#"  target="_blank">Find fan tickets</a></h3>       <h3 class="price-range">
+			 $20.00 - $25.00       </h3>
+	      </div>
+    </div>
+    <div class="list-view-item alt tfly-event-id-1650082 tfly-org-id-6823 tfly-venue-id-1233">
+<a href="event/1650082-wifisfuneral-seattle/index.html"><img src="images/73-og.png?w=500&h=336" width="500" height="336" alt="Wifisfuneral" title="Wifisfuneral" /></a>
+      <div class="list-view-details vevent">
+<h2 class="topline-info">Swaying Needle Presents</h2> <h1 class="headliners summary"><a href="#">Wifisfuneral</a></h1>
+					  <h2 class="supports description"><a href="#">KESHAWNtheKING, Mr. NiceNice, SneakGuapo</a></h2>        <h2 class="dates">Thursday 4/12</h2>
+              <h2 class="times">
+  <span class="start dtstart"><span class="value-title" title="2018-04-12T20:00:00-07:00"></span>8:00 pm</span> </h2>
+  
+  					  <h2 class="age-restriction all-ages">
+			This event is all ages					  </h2>
+			<h2 class="more-info"><a class="url" href="#">More Info</a></h2>
+          </div>
+		<div class="ticket-price">
+                   <h3 class="ticket-link primary-link"><a class="tickets" href="#" onclick="return tfly_openWindowGA(this);" target="_blank">Tickets</a></h3>
+					       <h3 class="price-range">
+			 $20.00 - $25.00       </h3>
+	      </div>
+    </div>
+    <div class="list-view-item tfly-event-id-1658876 tfly-org-id-6823 tfly-venue-id-1233">
+<a href="event/1658876-bootie-seattle-britney-vs-seattle/index.html"><img src="images/13-og.jpg?w=500&h=333" width="500" height="333" alt="BOOTIE SEATTLE: Britney vs. Taylor Mashup Night" title="BOOTIE SEATTLE: Britney vs. Taylor Mashup Night" /></a>
+      <div class="list-view-details vevent">
+<h2 class="topline-info">A Plus D Presents</h2><h1 class="headliners summary"><a href="#">BOOTIE SEATTLE: Britney vs. Taylor Mashup Night</a></h1>        <h2 class="dates">Friday 4/13</h2>
+              <h2 class="times">
+  <span class="start dtstart"><span class="value-title" title="2018-04-13T21:00:00-07:00"></span>9:00 pm</span> </h2>
+  
+  					  <h2 class="age-restriction over-21">
+			This event is 21 and over					  </h2>
+			<h2 class="more-info"><a class="url" href="#">More Info</a></h2>
+          </div>
+		<div class="ticket-price">
+                   <h3 class="ticket-link primary-link"><a class="tickets" href="#" onclick="return tfly_openWindowGA(this);" target="_blank">Tickets</a></h3>
+					       <h3 class="price-range">
+			 $10 advance || $5 before 10pm || $10 after       </h3>
+	      </div>
+    </div>
+    <div class="list-view-item alt tfly-event-id-1661293 tfly-org-id-6823 tfly-venue-id-1233">
+<a href="event/1661293-feel-good-inc-soul-train-seattle/index.html"><img src="images/21-og.jpg?w=500&h=333" width="500" height="333" alt="Feel Good Inc. - Soul Train Night" title="Feel Good Inc. - Soul Train Night" /></a>
+      <div class="list-view-details vevent">
+<h2 class="topline-info">Motown on Mondays & Do206 Present</h2><h1 class="headliners summary"><a href="#">Feel Good Inc. - Soul Train Night</a></h1>        <h2 class="dates">Saturday 4/14</h2>
+              <h2 class="times">
+  <span class="start dtstart"><span class="value-title" title="2018-04-14T21:00:00-07:00"></span>9:00 pm</span> </h2>
+  
+  					  <h2 class="age-restriction over-21">
+			This event is 21 and over					  </h2>
+			<h2 class="more-info"><a class="url" href="#">More Info</a></h2>
+          </div>
+		<div class="ticket-price">
+                   <h3 class="ticket-link primary-link"><a class="tickets" href="#" onclick="return tfly_openWindowGA(this);" target="_blank">Tickets</a></h3>
+					       <h3 class="price-range">
+			 $5.00       </h3>
+	      </div>
+    </div>
+    <div class="list-view-item tfly-event-id-1622709 tfly-org-id-6823 tfly-venue-id-1233">
+<a href="event/1622709-chrome-sparks-x-machinedrum-seattle/index.html"><img src="images/29-og.jpg?w=500&h=333" width="500" height="333" alt="Chrome Sparks x Machinedrum" title="Chrome Sparks x Machinedrum" /></a>
+      <div class="list-view-details vevent">
+<h2 class="topline-info">Neumos Presents</h2><h1 class="headliners summary"><a href="#">Chrome Sparks x Machinedrum</a></h1><h2 class="supports description"><a href="#">Ela Minus</a></h2>        <h2 class="dates">Sunday 4/15</h2>
+              <h2 class="times">
+  <span class="start dtstart"><span class="value-title" title="2018-04-15T20:00:00-07:00"></span>8:00 pm</span> </h2>
+  
+  					  <h2 class="age-restriction over-21">
+			This event is 21 and over					  </h2>
+			<h2 class="more-info"><a class="url" href="#">More Info</a></h2>
+          </div>
+		<div class="ticket-price">
+                   <h3 class="ticket-link primary-link"><a class="tickets" href="#" onclick="return tfly_openWindowGA(this);" target="_blank">Tickets</a></h3>
+					       <h3 class="price-range">
+			 $22.00 - $25.00       </h3>
+	      </div>
+    </div>
+    <div class="list-view-item alt tfly-event-id-1625056 tfly-org-id-6823 tfly-venue-id-1233">
+<a href="event/1625056-frankie-cosmos-seattle/index.html"><img src="images/27-og.jpg?w=500&h=331" width="500" height="331" alt="Frankie Cosmos" title="Frankie Cosmos" /></a>
+      <div class="list-view-details vevent">
+<h2 class="topline-info">Neumos & The Crocodile Present</h2> <h1 class="headliners summary"><a href="#">Frankie Cosmos</a></h1>
+					  <h2 class="supports description"><a href="#">Ian Sweet, SOAR, Deckard's Troll Parade</a></h2>        <h2 class="dates">Tuesday 4/17</h2>
+              <h2 class="times">
+  <span class="start dtstart"><span class="value-title" title="2018-04-17T20:00:00-07:00"></span>8:00 pm</span> </h2>
+  
+  					  <h2 class="age-restriction all-ages">
+			This event is all ages					  </h2>
+			<h2 class="more-info"><a class="url" href="#">More Info</a></h2>
+          </div>
+		<div class="ticket-price">
+                   <h3 class="ticket-link primary-link"><a class="tickets" href="#" onclick="return tfly_openWindowGA(this);" target="_blank">Tickets</a></h3>
+					       <h3 class="price-range">
+			 $15.00 - $17.00       </h3>
+	      </div>
+    </div>
+    <div class="list-view-item tfly-event-id-1606144 tfly-org-id-6823 tfly-venue-id-1233">
+<a href="event/1606144-timeflies-seattle/index.html"><img src="images/66-og.jpg?w=500&h=333" width="500" height="333" alt="Timeflies" title="Timeflies" /></a>
+      <div class="list-view-details vevent">
+<h2 class="topline-info">The Crocodile Presents</h2> <h1 class="headliners summary"><a href="#">Timeflies</a></h1>
+					  <h2 class="supports description"><a href="#">Bryce Vine, Baby Raptors</a></h2>        <h2 class="dates">Wednesday 4/18</h2>
+              <h2 class="times">
+  <span class="start dtstart"><span class="value-title" title="2018-04-18T20:00:00-07:00"></span>8:00 pm</span> </h2>
+  
+  					  <h2 class="age-restriction all-ages">
+			This event is all ages					  </h2>
+			<h2 class="more-info"><a class="url" href="#">More Info</a></h2>
+          </div>
+		<div class="ticket-price">
+                   <h3 class="ticket-link primary-link"><a class="tickets" href="#" onclick="return tfly_openWindowGA(this);" target="_blank">Tickets</a></h3>
+					       <h3 class="price-range">
+			 $30 - $35       </h3>
+	      </div>
+    </div>
+    <div class="list-view-item alt tfly-event-id-1593015 tfly-org-id-6823 tfly-venue-id-1233">
+<a href="event/1593015-windhand-seattle/index.html"><img src="images/02-og.jpg?w=500&h=333" width="500" height="333" alt="Windhand" title="Windhand" /></a>
+      <div class="list-view-details vevent">
+<h2 class="topline-info">Neumos & KISW Present</h2> <h1 class="headliners summary"><a href="#">Windhand</a></h1>
+					  <h2 class="supports description"><a href="event/1593015-windhand-seattle/index.html">Ruby The Hatchet, Un</a></h2>        <h2 class="dates">Thursday 4/19</h2>
+              <h2 class="times">
+  <span class="start dtstart"><span class="value-title" title="2018-04-19T20:00:00-07:00"></span>8:00 pm</span> </h2>
+  
+  					  <h2 class="age-restriction over-21">
+			This event is 21 and over					  </h2>
+			<h2 class="more-info"><a class="url" href="event/1593015-windhand-seattle/index.html">More Info</a></h2>
+          </div>
+		<div class="ticket-price">
+                   <h3 class="ticket-link primary-link"><a class="tickets" href="#" onclick="return tfly_openWindowGA(this);" target="_blank">Tickets</a></h3>
+					       <h3 class="price-range">
+			 $15.00       </h3>
+	      </div>
+    </div>
+    <div class="list-view-item tfly-event-id-1638378 tfly-org-id-6823 tfly-venue-id-1233">
+<a href="#"><img src="images/68-og.jpg?w=500&h=333" width="500" height="333" alt="The Brothers Comatose" title="The Brothers Comatose" /></a>
+      <div class="list-view-details vevent">
+<h2 class="topline-info">True West Presents</h2> <h1 class="headliners summary"><a href="#">The Brothers Comatose</a></h1>
+					  <h2 class="supports description"><a href="#">The Sam Chase & The Untraditional</a></h2>        <h2 class="dates">Friday 4/20</h2>
+              <h2 class="times">
+  <span class="start dtstart"><span class="value-title" title="2018-04-20T20:00:00-07:00"></span>8:00 pm</span> </h2>
+  
+  					  <h2 class="age-restriction over-21">
+			This event is 21 and over					  </h2>
+			<h2 class="more-info"><a class="url" href="#">More Info</a></h2>
+          </div>
+		<div class="ticket-price">
+                   <h3 class="ticket-link primary-link"><a class="tickets" href="#" onclick="return tfly_openWindowGA(this);" target="_blank">Tickets</a></h3>
+					       <h3 class="price-range">
+			 $17.00 - $20.00       </h3>
+	      </div>
+    </div>
+    <div class="list-view-item alt tfly-event-id-1656857 tfly-org-id-6823 tfly-venue-id-1233">
+<a href="event/1656857-ripe-moved-from-barboza-seattle/index.html"><img src="images/30-og.jpg?w=500&h=333" width="500" height="333" alt="Ripe *Moved from Barboza*" title="Ripe *Moved from Barboza*" /></a>
+      <div class="list-view-details vevent">
+<h2 class="topline-info">Neumos Presents</h2><h1 class="headliners summary"><a href="#">Ripe *Moved from Barboza*</a></h1><h2 class="supports description"><a href="#">The Dip, Emerald City Soul Club DJs</a></h2>        <h2 class="dates">Saturday 4/21</h2>
+              <h2 class="times">
+  <span class="start dtstart"><span class="value-title" title="2018-04-21T19:00:00-07:00"></span>7:00 pm</span> </h2>
+  
+  <h2 class="more-info"><a class="url" href="#">More Info</a></h2>
+          </div>
+		<div class="ticket-price">
+                   <h3 class="ticket-link primary-link"><a class="tickets" href="#" onclick="return tfly_openWindowGA(this);" target="_blank">Tickets</a></h3>
+					       <h3 class="price-range">
+			 $12.00 - $15.00       </h3>
+	      </div>
+    </div>
+    <div class="list-view-item tfly-event-id-1650976 tfly-org-id-6823 tfly-venue-id-1233">
+<a href="#"><img src="images/83-og.jpg?w=500&h=333" width="500" height="333" alt="The Fresh Prince of Capitol Hill - A &#039;90s Hip Hop Dance Party" title="The Fresh Prince of Capitol Hill - A &#039;90s Hip Hop Dance Party" /></a>
+      <div class="list-view-details vevent">
+<h2 class="topline-info">Neumos Presents</h2><h1 class="headliners summary"><a href="#">The Fresh Prince of Capitol Hill - A '90s Hip Hop Dance Party</a></h1>        <h2 class="dates">Saturday 4/21</h2>
+              <h2 class="times">
+  <span class="start dtstart"><span class="value-title" title="2018-04-21T22:30:00-07:00"></span>10:30 pm</span> </h2>
+  
+  					  <h2 class="age-restriction over-21">
+			This event is 21 and over					  </h2>
+			<h2 class="more-info"><a class="url" href="#">More Info</a></h2>
+          </div>
+		<div class="ticket-price">
+                   <h3 class="ticket-link primary-link"><a class="tickets" href="#" onclick="return tfly_openWindowGA(this);" target="_blank">Tickets</a></h3>
+					       <h3 class="price-range">
+			 $5.00       </h3>
+	      </div>
+    </div>
+    <div class="list-view-item tfly-event-id-1654121 tfly-org-id-6823 tfly-venue-id-1233">
+<a href="#"><img src="images/71-og.jpg?w=500&h=333" width="500" height="333" alt="CupcakKe" title="CupcakKe" /></a>
+      <div class="list-view-details vevent">
+<h2 class="topline-info">Neumos Presents</h2><h1 class="headliners summary"><a href="#">CupcakKe</a></h1><h2 class="supports description"><a href="#">Guayaba, Michete</a></h2>        <h2 class="dates">Sunday 4/22</h2>
+              <h2 class="times">
+  <span class="start dtstart"><span class="value-title" title="2018-04-22T20:00:00-07:00"></span>8:00 pm</span> </h2>
+  
+  					  <h2 class="age-restriction all-ages">
+			This event is all ages					  </h2>
+			<h2 class="more-info"><a class="url" href="#">More Info</a></h2>
+          </div>
+		<div class="ticket-price">
+                   <h3 class="ticket-link primary-link"><a class="tickets" href="#" onclick="return tfly_openWindowGA(this);" target="_blank">Tickets</a></h3>
+					       <h3 class="price-range">
+			 $17 - $19       </h3>
+	      </div>
+    </div>
+    <div class="list-view-item alt tfly-event-id-1635236 tfly-org-id-6823 tfly-venue-id-1233">
+<a href="#"><img src="images/38-og.jpg?w=500&h=333" width="500" height="333" alt="Django Django" title="Django Django" /></a>
+      <div class="list-view-details vevent">
+<h2 class="topline-info">STG Presents</h2> <h1 class="headliners summary"><a href="#">Django Django</a></h1>
+					  <h2 class="supports description"><a href="#">Ofelia K</a></h2>        <h2 class="dates">Monday 4/23</h2>
+              <h2 class="times">
+  <span class="start dtstart"><span class="value-title" title="2018-04-23T20:00:00-07:00"></span>8:00 pm</span> </h2>
+  
+  					  <h2 class="age-restriction all-ages">
+			This event is all ages					  </h2>
+			<h2 class="more-info"><a class="url" href="#">More Info</a></h2>
+          </div>
+		<div class="ticket-price">
+                   <h3 class="ticket-link primary-link"><a class="tickets" href="#" onclick="return tfly_openWindowGA(this);" target="_blank">Tickets</a></h3>
+					       <h3 class="price-range">
+			 $22.00 - $25.00       </h3>
+	      </div>
+    </div>
+    <div class="list-view-item tfly-event-id-1608049 tfly-org-id-6823 tfly-venue-id-1233">
+<a href="#"><img src="images/29-og.jpg?w=500&h=333" width="500" height="333" alt="Khruangbin" title="Khruangbin" /></a>
+      <div class="list-view-details vevent">
+<h2 class="topline-info">Neumos Presents</h2> <h1 class="headliners summary"><a href="#">Sold Out: Khruangbin</a></h1>
+					  <h2 class="supports description"><a href="#">The Mattson 2</a></h2>        <h2 class="dates">Thursday 4/26</h2>
+              <h2 class="times">
+  <span class="start dtstart"><span class="value-title" title="2018-04-26T20:00:00-07:00"></span>8:00 pm</span> </h2>
+  
+  					  <h2 class="age-restriction over-21">
+			This event is 21 and over					  </h2>
+			<h2 class="more-info"><a class="url" href="#">More Info</a></h2>
+          </div>
+		<div class="ticket-price">
+<h3 class="ticket-link lyte-link"><a class="tickets" href="#"  target="_blank">Find fan tickets</a></h3>       <h3 class="price-range">
+			 $18.00 - $20.00       </h3>
+	      </div>
+    </div>
+    <div class="list-view-item alt tfly-event-id-1596921 tfly-org-id-6823 tfly-venue-id-1233">
+<a href="#"><img src="images/53-og.jpg?w=500&h=333" width="500" height="333" alt="Jorja Smith" title="Jorja Smith" /></a>
+      <div class="list-view-details vevent">
+<h2 class="topline-info">Showbox Presents</h2> <h1 class="headliners summary"><a href="event/1596921-jorja-smith-seattle/index.html">Sold Out: Jorja Smith</a></h1>
+					  <h2 class="supports description"><a href="#">Ama Lou</a></h2>        <h2 class="dates">Friday 4/27</h2>
+              <h2 class="times">
+  <span class="start dtstart"><span class="value-title" title="2018-04-27T19:30:00-07:00"></span>7:30 pm</span> </h2>
+  
+  					  <h2 class="age-restriction all-ages">
+			This event is all ages					  </h2>
+			<h2 class="more-info"><a class="url" href="#">More Info</a></h2>
+          </div>
+		<div class="ticket-price">
+<h3 class="ticket-link lyte-link"><a class="tickets" href="#"  target="_blank">Find fan tickets</a></h3>       <h3 class="price-range">
+			 $25.00 - $28.00       </h3>
+	      </div>
+    </div>
+    <div class="list-view-item tfly-event-id-1631336 tfly-org-id-6823 tfly-venue-id-1233">
+<a href="#"><img src="images/48-og.jpeg?w=500&h=333" width="500" height="333" alt="Kasbo" title="Kasbo" /></a>
+      <div class="list-view-details vevent">
+<h2 class="topline-info">Neumos Presents</h2> <h1 class="headliners summary"><a href="#">Kasbo</a></h1>
+					  <h2 class="supports description"><a href="event/1631336-kasbo-seattle/index.html">BAYNK, Evan Giia</a></h2>        <h2 class="dates">Saturday 4/28</h2>
+              <h2 class="times">
+  <span class="start dtstart"><span class="value-title" title="2018-04-28T20:00:00-07:00"></span>8:00 pm</span> </h2>
+  
+  					  <h2 class="age-restriction all-ages">
+			This event is all ages					  </h2>
+			<h2 class="more-info"><a class="url" href="#">More Info</a></h2>
+          </div>
+		<div class="ticket-price">
+                   <h3 class="ticket-link primary-link"><a class="tickets" href="#" onclick="return tfly_openWindowGA(this);" target="_blank">Tickets</a></h3>
+					       <h3 class="price-range">
+			 $12.00 - $20.00       </h3>
+	      </div>
+    </div>
+    <div class="list-view-item alt tfly-event-id-1641131 tfly-org-id-6823 tfly-venue-id-1233">
+<a href="#"><img src="images/83-og.jpg?w=500&h=333" width="500" height="333" alt="Skizzy Mars" title="Skizzy Mars" /></a>
+      <div class="list-view-details vevent">
+<h2 class="topline-info">Neumos Presents</h2> <h1 class="headliners summary"><a href="#">Skizzy Mars</a></h1>
+					  <h2 class="supports description"><a href="#">Oliver Tree</a></h2>        <h2 class="dates">Sunday 4/29</h2>
+              <h2 class="times">
+  <span class="start dtstart"><span class="value-title" title="2018-04-29T20:00:00-07:00"></span>8:00 pm</span> </h2>
+  
+  					  <h2 class="age-restriction all-ages">
+			This event is all ages					  </h2>
+			<h2 class="more-info"><a class="url" href="#">More Info</a></h2>
+          </div>
+		<div class="ticket-price">
+                   <h3 class="ticket-link primary-link"><a class="tickets" href="#" onclick="return tfly_openWindowGA(this);" target="_blank">Tickets</a></h3>
+					       <h3 class="price-range">
+			 $20.00 - $79.00       </h3>
+	      </div>
+    </div>
+    <div class="list-view-item tfly-event-id-1612816 tfly-org-id-6823 tfly-venue-id-1233">
+<a href="event/1612816-montreal-seattle/index.html"><img src="images/09-og.jpg?w=500&h=333" width="500" height="333" alt="of Montreal" title="of Montreal" /></a>
+      <div class="list-view-details vevent">
+<h2 class="topline-info">KEXP & Neumos Present</h2> <h1 class="headliners summary"><a href="#">of Montreal</a></h1>
+					  <h2 class="supports description"><a href="#">Locate S, 1</a></h2>        <h2 class="dates">Tuesday 5/1</h2>
+              <h2 class="times">
+  <span class="start dtstart"><span class="value-title" title="2018-05-01T20:00:00-07:00"></span>8:00 pm</span> </h2>
+  
+  					  <h2 class="age-restriction all-ages">
+			This event is all ages					  </h2>
+			<h2 class="more-info"><a class="url" href="#">More Info</a></h2>
+          </div>
+		<div class="ticket-price">
+                   <h3 class="ticket-link primary-link"><a class="tickets" href="#" onclick="return tfly_openWindowGA(this);" target="_blank">Tickets</a></h3>
+					       <h3 class="price-range">
+			 $20.00 - $22.00       </h3>
+	      </div>
+    </div>
+    <div class="list-view-item alt tfly-event-id-1599581 tfly-org-id-6823 tfly-venue-id-1233">
+<a href="event/1599581-kid-koala-s-vinyl-vaudeville-seattle/index.html"><img src="images/69-og.jpg?w=500&h=333" width="500" height="333" alt="Kid Koala’s Vinyl Vaudeville Floor Kids Edition" title="Kid Koala’s Vinyl Vaudeville Floor Kids Edition" /></a>
+      <div class="list-view-details vevent">
+<h2 class="topline-info">Neumos & KEXP Present</h2><h1 class="headliners summary"><a href="#">Kid Koala’s Vinyl Vaudeville Floor Kids Edition</a></h1><h2 class="supports description"><a href="event/1599581-kid-koala-s-vinyl-vaudeville-seattle/index.html">Adira Amram and the Experience, DJ Jester</a></h2>        <h2 class="dates">Thursday 5/3</h2>
+              <h2 class="times">
+  <span class="start dtstart"><span class="value-title" title="2018-05-03T19:30:00-07:00"></span>7:30 pm</span> </h2>
+  
+  					  <h2 class="age-restriction all-ages">
+			This event is all ages					  </h2>
+			<h2 class="more-info"><a class="url" href="#">More Info</a></h2>
+          </div>
+		<div class="ticket-price">
+                   <h3 class="ticket-link primary-link"><a class="tickets" href="#" onclick="return tfly_openWindowGA(this);" target="_blank">Tickets</a></h3>
+					       <h3 class="price-range">
+			 $20.00       </h3>
+	      </div>
+    </div>
+    <div class="list-view-item tfly-event-id-1646251 tfly-org-id-6823 tfly-venue-id-1233">
+<a href="event/1646251-opiuo-seattle/index.html"><img src="images/64-og.jpg?w=500&h=347" width="500" height="347" alt="OPIUO" title="OPIUO" /></a>
+      <div class="list-view-details vevent">
+<h2 class="topline-info">Neumos Presents</h2><h1 class="headliners summary"><a href="#">OPIUO</a></h1><h2 class="supports description"><a href="event/1646251-opiuo-seattle/index.html">Subdocta, Torbjørn</a></h2>        <h2 class="dates">Friday 5/4</h2>
+              <h2 class="times">
+  <span class="start dtstart"><span class="value-title" title="2018-05-04T20:00:00-07:00"></span>8:00 pm</span> </h2>
+  
+  					  <h2 class="age-restriction over-21">
+			This event is 21 and over					  </h2>
+			<h2 class="more-info"><a class="url" href="#">More Info</a></h2>
+          </div>
+		<div class="ticket-price">
+                   <h3 class="ticket-link primary-link"><a class="tickets" href="#" onclick="return tfly_openWindowGA(this);" target="_blank">Tickets</a></h3>
+					       <h3 class="price-range">
+			 $17.00 - $20.00       </h3>
+	      </div>
+    </div>
+    <div class="list-view-item alt tfly-event-id-1610126 tfly-org-id-6823 tfly-venue-id-1233">
+<a href="#"><img src="images/56-og.jpg?w=500&h=333" width="500" height="333" alt="Colter Wall" title="Colter Wall" /></a>
+      <div class="list-view-details vevent">
+<h2 class="topline-info">Showbox Presents</h2> <h1 class="headliners summary"><a href="event/1610126-colter-wall-seattle/index.html">Sold Out: Colter Wall</a></h1>
+					  <h2 class="supports description"><a href="#">Jade Bird</a></h2>        <h2 class="dates">Saturday 5/5</h2>
+              <h2 class="times">
+  <span class="start dtstart"><span class="value-title" title="2018-05-05T20:00:00-07:00"></span>8:00 pm</span> </h2>
+  
+  					  <h2 class="age-restriction all-ages">
+			This event is all ages					  </h2>
+			<h2 class="more-info"><a class="url" href="#">More Info</a></h2>
+          </div>
+		<div class="ticket-price">
+<h3 class="ticket-link lyte-link"><a class="tickets" href="#"  target="_blank">Find fan tickets</a></h3>       <h3 class="price-range">
+			 $17.00 - $20.00       </h3>
+	      </div>
+    </div>
+    <div class="list-view-item tfly-event-id-1639983 tfly-org-id-6823 tfly-venue-id-1233">
+<a href="#"><img src="images/90-og.jpg?w=500&h=333" width="500" height="333" alt="Yung Gravy" title="Yung Gravy" /></a>
+      <div class="list-view-details vevent">
+<h2 class="topline-info">Neumos Presents</h2> <h1 class="headliners summary"><a href="#">Yung Gravy</a></h1>
+					  <h2 class="supports description"><a href="#">BBNO$</a></h2>        <h2 class="dates">Sunday 5/6</h2>
+              <h2 class="times">
+  <span class="start dtstart"><span class="value-title" title="2018-05-06T20:00:00-07:00"></span>8:00 pm</span> </h2>
+  
+  					  <h2 class="age-restriction over-16">
+			This event is 16 and over					  </h2>
+			<h2 class="more-info"><a class="url" href="#">More Info</a></h2>
+          </div>
+		<div class="ticket-price">
+                   <h3 class="ticket-link primary-link"><a class="tickets" href="#" onclick="return tfly_openWindowGA(this);" target="_blank">Tickets</a></h3>
+					       <h3 class="price-range">
+			 $15.00 - $69.00       </h3>
+	      </div>
+    </div>
+    <div class="list-view-item alt tfly-event-id-1626580 tfly-org-id-6823 tfly-venue-id-1233">
+<a href="#"><img src="images/06-og.jpg?w=500&h=333" width="500" height="333" alt="Editors" title="Editors" /></a>
+      <div class="list-view-details vevent">
+<h2 class="topline-info">Showbox Presents</h2> <h1 class="headliners summary"><a href="#">Editors</a></h1>
+					          <h2 class="dates">Tuesday 5/8</h2>
+              <h2 class="times">
+  <span class="start dtstart"><span class="value-title" title="2018-05-08T19:30:00-07:00"></span>7:30 pm</span> </h2>
+  
+  					  <h2 class="age-restriction all-ages">
+			This event is all ages					  </h2>
+			<h2 class="more-info"><a class="url" href="#">More Info</a></h2>
+          </div>
+		<div class="ticket-price">
+                   <h3 class="ticket-link primary-link"><a class="tickets" href="#" onclick="return tfly_openWindowGA(this);" target="_blank">Tickets</a></h3>
+					       <h3 class="price-range">
+			 $25.00       </h3>
+	      </div>
+    </div>
+    <div class="list-view-item tfly-event-id-1668167 tfly-org-id-6823 tfly-venue-id-1233">
+<a href="#"><img src="images/04-og.jpg?w=500&h=333" width="500" height="333" alt="The BGP - Release Party!" title="The BGP - Release Party!" /></a>
+      <div class="list-view-details vevent">
+<h2 class="topline-info">Neumos Presents</h2><h1 class="headliners summary"><a href="#">The BGP - Release Party!</a></h1><h2 class="supports description"><a href="#">The West Coast Feed, Van Andrew</a></h2>        <h2 class="dates">Thursday 5/10</h2>
+              <h2 class="times">
+  <span class="start dtstart"><span class="value-title" title="2018-05-10T19:00:00-07:00"></span>7:00 pm</span> </h2>
+  
+  					  <h2 class="age-restriction over-21">
+			This event is 21 and over					  </h2>
+			<h2 class="more-info"><a class="url" href="#">More Info</a></h2>
+          </div>
+		<div class="ticket-price">
+                   <h3 class="ticket-link primary-link"><a class="tickets" href="#" onclick="return tfly_openWindowGA(this);" target="_blank">Tickets</a></h3>
+					       <h3 class="price-range">
+			 $13.00 - $15.00       </h3>
+	      </div>
+    </div>
+    <div class="list-view-item alt tfly-event-id-1661245 tfly-org-id-6823 tfly-venue-id-1233">
+<a href="#"><img src="images/18-og.jpg?w=500&h=333" width="500" height="333" alt="Tricky" title="Tricky" /></a>
+      <div class="list-view-details vevent">
+<h2 class="topline-info">STG Presents</h2> <h1 class="headliners summary"><a href="#">Tricky</a></h1>
+					          <h2 class="dates">Saturday 5/12</h2>
+              <h2 class="times">
+  <span class="start dtstart"><span class="value-title" title="2018-05-12T19:30:00-07:00"></span>7:30 pm</span> </h2>
+  
+  					  <h2 class="age-restriction all-ages">
+			This event is all ages					  </h2>
+			<h2 class="more-info"><a class="url" href="#">More Info</a></h2>
+          </div>
+		<div class="ticket-price">
+                   <h3 class="ticket-link primary-link"><a class="tickets" href="#" onclick="return tfly_openWindowGA(this);" target="_blank">Tickets</a></h3>
+					       <h3 class="price-range">
+			 $25.00 - $30.00       </h3>
+	      </div>
+    </div>
+    <div class="list-view-item tfly-event-id-1641839 tfly-org-id-6823 tfly-venue-id-1233">
+<a href="#"><img src="images/96-og.jpg?w=500&h=333" width="500" height="333" alt="Mount Kimbie" title="Mount Kimbie" /></a>
+      <div class="list-view-details vevent">
+<h2 class="topline-info">Neumos & KEXP Present</h2> <h1 class="headliners summary"><a href="#">Mount Kimbie</a></h1>
+					  <h2 class="supports description"><a href="#">Smerz</a></h2>        <h2 class="dates">Wednesday 5/16</h2>
+              <h2 class="times">
+  <span class="start dtstart"><span class="value-title" title="2018-05-16T20:00:00-07:00"></span>8:00 pm</span> </h2>
+  
+  					  <h2 class="age-restriction over-21">
+			This event is 21 and over					  </h2>
+			<h2 class="more-info"><a class="url" href="#">More Info</a></h2>
+          </div>
+		<div class="ticket-price">
+                   <h3 class="ticket-link primary-link"><a class="tickets" href="#" onclick="return tfly_openWindowGA(this);" target="_blank">Tickets</a></h3>
+					       <h3 class="price-range">
+			 $17.00 - $20.00       </h3>
+	      </div>
+    </div>
+    <div class="list-view-item alt tfly-event-id-1668088 tfly-org-id-6823 tfly-venue-id-1233">
+<a href="#"><img src="images/58-og.jpg?w=500&h=333" width="500" height="333" alt="Sammy J" title="Sammy J" /></a>
+      <div class="list-view-details vevent">
+<h2 class="topline-info">Da808 Music and Neumos Present</h2> <h1 class="headliners summary"><a href="#">Sammy J</a></h1>
+					          <h2 class="dates">Thursday 5/17</h2>
+              <h2 class="times">
+  <span class="start dtstart"><span class="value-title" title="2018-05-17T20:00:00-07:00"></span>8:00 pm</span> </h2>
+  
+  					  <h2 class="age-restriction all-ages">
+			This event is all ages					  </h2>
+			<h2 class="more-info"><a class="url" href="#">More Info</a></h2>
+          </div>
+		<div class="ticket-price">
+                   <h3 class="ticket-link primary-link"><a class="tickets" href="#" onclick="return tfly_openWindowGA(this);" target="_blank">Tickets</a></h3>
+					       <h3 class="price-range">
+			 $22.00 - $25.00       </h3>
+	      </div>
+    </div>
+    <div class="list-view-item tfly-event-id-1655485 tfly-org-id-6823 tfly-venue-id-1233">
+<a href="#"><img src="images/95-og.jpg?w=500&h=333" width="500" height="333" alt="BowieVision" title="BowieVision" /></a>
+      <div class="list-view-details vevent">
+<h2 class="topline-info">Neumos Presents</h2> <h1 class="headliners summary"><a href="#">BowieVision</a></h1>
+					  <h2 class="supports description"><a href="#">Purple Mane</a></h2>        <h2 class="dates">Friday 5/18</h2>
+              <h2 class="times">
+  <span class="start dtstart"><span class="value-title" title="2018-05-18T21:00:00-07:00"></span>9:00 pm</span> </h2>
+  
+  					  <h2 class="age-restriction over-21">
+			This event is 21 and over					  </h2>
+			<h2 class="more-info"><a class="url" href="#">More Info</a></h2>
+          </div>
+		<div class="ticket-price">
+                   <h3 class="ticket-link primary-link"><a class="tickets" href="#" onclick="return tfly_openWindowGA(this);" target="_blank">Tickets</a></h3>
+					       <h3 class="price-range">
+			 $15.00 - $17.00       </h3>
+	      </div>
+    </div>
+    <div class="list-view-item alt tfly-event-id-1615366 tfly-org-id-6823 tfly-venue-id-1233">
+<a href="#"><img src="images/74-og.jpg?w=500&h=333" width="500" height="333" alt="Tyrone Wells" title="Tyrone Wells" /></a>
+      <div class="list-view-details vevent">
+<h2 class="topline-info">Neumos Presents</h2> <h1 class="headliners summary"><a href="#">Tyrone Wells</a></h1>
+					  <h2 class="supports description"><a href="#">Special Guest: Gabe Dixon</a></h2>        <h2 class="dates">Saturday 5/19</h2>
+              <h2 class="times">
+  <span class="start dtstart"><span class="value-title" title="2018-05-19T20:00:00-07:00"></span>8:00 pm</span> </h2>
+  
+  					  <h2 class="age-restriction all-ages">
+			This event is all ages					  </h2>
+			<h2 class="more-info"><a class="url" href="#">More Info</a></h2>
+          </div>
+		<div class="ticket-price">
+                   <h3 class="ticket-link primary-link"><a class="tickets" href="#" onclick="return tfly_openWindowGA(this);" target="_blank">Tickets</a></h3>
+					       <h3 class="price-range">
+			 $20.00 - $23.00       </h3>
+	      </div>
+    </div>
+    <div class="list-view-item tfly-event-id-1669183 tfly-org-id-6823 tfly-venue-id-1233">
+<a href="#"><img src="images/80-og.jpg?w=500&h=333" width="500" height="333" alt="Joyner Lucas" title="Joyner Lucas" /></a>
+      <div class="list-view-details vevent">
+<h2 class="topline-info">Neumos Presents: "I’m Kind Of A Big Deal" Tour</h2> <h1 class="headliners summary"><a href="#">Joyner Lucas</a></h1>
+					  <h2 class="supports description"><a href="#">Eli</a></h2>        <h2 class="dates">Wednesday 5/23</h2>
+              <h2 class="times">
+  <span class="start dtstart"><span class="value-title" title="2018-05-23T20:00:00-07:00"></span>8:00 pm</span> </h2>
+  
+  					  <h2 class="age-restriction all-ages">
+			This event is all ages					  </h2>
+			<h2 class="more-info"><a class="url" href="#">More Info</a></h2>
+          </div>
+		<div class="ticket-price">
+                   <h3 class="ticket-link primary-link"><a class="tickets" href="#" onclick="return tfly_openWindowGA(this);" target="_blank">Tickets</a></h3>
+					       <h3 class="price-range">
+			 $19.00 - $100.00       </h3>
+	      </div>
+    </div>
+    <div class="list-view-item alt tfly-event-id-1673713 tfly-org-id-6823 tfly-venue-id-1233">
+<a href="#"><img src="images/87-og.jpg?w=500&h=333" width="500" height="333" alt="Erik Blood + Shit Ghost" title="Erik Blood + Shit Ghost" /></a>
+      <div class="list-view-details vevent">
+<h2 class="topline-info">Neumos Presents</h2><h1 class="headliners summary"><a href="#">Erik Blood + Shit Ghost</a></h1><h2 class="supports description"><a href="#">Newaxeyes, Wall Of Ears</a></h2>        <h2 class="dates">Thursday 5/24</h2>
+              <h2 class="times">
+  <span class="start dtstart"><span class="value-title" title="2018-05-24T20:00:00-07:00"></span>8:00 pm</span> </h2>
+  
+  					  <h2 class="age-restriction over-21">
+			This event is 21 and over					  </h2>
+			<h2 class="more-info"><a class="url" href="#">More Info</a></h2>
+          </div>
+		<div class="ticket-price">
+                   <h3 class="ticket-link primary-link"><a class="tickets" href="#" onclick="return tfly_openWindowGA(this);" target="_blank">Tickets</a></h3>
+					       <h3 class="price-range">
+			 $12.00 - $14.00       </h3>
+	      </div>
+    </div>
+    <div class="list-view-item tfly-event-id-1630025 tfly-org-id-6823 tfly-venue-id-1233">
+<a href="#"><img src="images/63-og.jpg?w=500&h=333" width="500" height="333" alt="The Hawkins Snow Ball - The Upside Down Edition" title="The Hawkins Snow Ball - The Upside Down Edition" /></a>
+      <div class="list-view-details vevent">
+<h2 class="topline-info">Neumos & Barboza Present</h2><h1 class="headliners summary"><a href="3">The Hawkins Snow Ball - The Upside Down Edition</a></h1>        <h2 class="dates">Sunday 5/27</h2>
+              <h2 class="times">
+  <span class="start dtstart"><span class="value-title" title="2018-05-27T21:00:00-07:00"></span>9:00 pm</span> </h2>
+  
+  					  <h2 class="age-restriction over-21">
+			This event is 21 and over					  </h2>
+			<h2 class="more-info"><a class="url" href="#">More Info</a></h2>
+          </div>
+		<div class="ticket-price">
+                   <h3 class="ticket-link primary-link"><a class="tickets" href="#" onclick="return tfly_openWindowGA(this);" target="_blank">Tickets</a></h3>
+					       <h3 class="price-range">
+			 $5.00       </h3>
+	      </div>
+    </div>
+    <div class="list-view-item alt tfly-event-id-1611495 tfly-org-id-6823 tfly-venue-id-1233">
+<a href="#"><img src="images/14-og.jpg?w=500&h=333" width="500" height="333" alt="Power Trip" title="Power Trip" /></a>
+      <div class="list-view-details vevent">
+<h2 class="topline-info">Neumos Presents</h2> <h1 class="headliners summary"><a href="#">Power Trip</a></h1>
+					  <h2 class="supports description"><a href="3">Sheer Mag, Fury, Red Death</a></h2>        <h2 class="dates">Monday 5/28</h2>
+              <h2 class="times">
+  <span class="start dtstart"><span class="value-title" title="2018-05-28T20:00:00-07:00"></span>8:00 pm</span> </h2>
+  
+  					  <h2 class="age-restriction all-ages">
+			This event is all ages					  </h2>
+			<h2 class="more-info"><a class="url" href="#">More Info</a></h2>
+          </div>
+		<div class="ticket-price">
+                   <h3 class="ticket-link primary-link"><a class="tickets" href="#" onclick="return tfly_openWindowGA(this);" target="_blank">Tickets</a></h3>
+					       <h3 class="price-range">
+			 $16.00 - $18.00       </h3>
+	      </div>
+    </div>
+    <div class="list-view-item tfly-event-id-1584055 tfly-org-id-6823 tfly-venue-id-1233">
+<a href="#"><img src="images/43-og.jpg?w=500&h=333" width="500" height="333" alt="Northwest Terror Fest" title="Northwest Terror Fest" /></a>
+      <div class="list-view-details vevent">
+<h2 class="topline-info">NWTF Presents</h2> <h1 class="headliners summary"><a href="#">Northwest Terror Fest</a></h1>
+					          <h2 class="dates">Thursday 5/31<span class="endate dtend"><span class="value-title" title="2018-06-02T23:59:59-07:00"></span> - Saturday 6/2 </span></h2>
+              <h2 class="times">
+  <span class="start dtstart"><span class="value-title" title="2018-05-31T16:00:00-07:00"></span>4:00 pm</span> </h2>
+  
+  <h2 class="more-info"><a class="url" href="#">More Info</a></h2>
+          </div>
+		<div class="ticket-price">
+                   <h3 class="ticket-link primary-link"><a class="tickets" href="#" onclick="return tfly_openWindowGA(this);" target="_blank">Tickets</a></h3>
+					       <h3 class="price-range">
+			 $125       </h3>
+	      </div>
+    </div>
+    <div class="list-view-item alt tfly-event-id-1633580 tfly-org-id-6823 tfly-venue-id-1233">
+<a href="3"><img src="images/90-og.jpg?w=500&h=333" width="500" height="333" alt="Northwest Terror Fest" title="Northwest Terror Fest" /></a>
+      <div class="list-view-details vevent">
+<h2 class="topline-info">NWTF Presents</h2> <h1 class="headliners summary"><a href="#">Northwest Terror Fest</a></h1>
+					          <h2 class="dates">Friday 6/1</h2>
+              <h2 class="times">
+  <span class="start dtstart"><span class="value-title" title="2018-06-01T16:00:00-07:00"></span>4:00 pm</span> </h2>
+  
+  <h2 class="more-info"><a class="url" href="#">More Info</a></h2>
+          </div>
+		<div class="ticket-price">
+                   <h3 class="ticket-link primary-link"><a class="tickets" href="#" onclick="return tfly_openWindowGA(this);" target="_blank">Tickets</a></h3>
+					       <h3 class="price-range">
+			 $15 - $150       </h3>
+	      </div>
+    </div>
+    <div class="list-view-item tfly-event-id-1633582 tfly-org-id-6823 tfly-venue-id-1233">
+<a href="#"><img src="images/91-og.jpg?w=500&h=333" width="500" height="333" alt="Northwest Terror Fest" title="Northwest Terror Fest" /></a>
+      <div class="list-view-details vevent">
+<h2 class="topline-info">NWTF Presents</h2> <h1 class="headliners summary"><a href="#">Northwest Terror Fest</a></h1>
+					          <h2 class="dates">Saturday 6/2</h2>
+              <h2 class="times">
+  <span class="start dtstart"><span class="value-title" title="2018-06-02T16:00:00-07:00"></span>4:00 pm</span> </h2>
+  
+  <h2 class="more-info"><a class="url" href="#">More Info</a></h2>
+          </div>
+		<div class="ticket-price">
+                   <h3 class="ticket-link primary-link"><a class="tickets" href="#" onclick="return tfly_openWindowGA(this);" target="_blank">Tickets</a></h3>
+					       <h3 class="price-range">
+			 $15 - $150       </h3>
+	      </div>
+    </div>
+    <div class="list-view-item alt tfly-event-id-1657182 tfly-org-id-6823 tfly-venue-id-1233">
+<a href="#"><img src="images/40-og.jpg?w=500&h=333" width="500" height="333" alt="BHAD BHABIE" title="BHAD BHABIE" /></a>
+      <div class="list-view-details vevent">
+<h2 class="topline-info">Neumos Presents: Bhanned in the USA Tour</h2><h1 class="headliners summary"><a href="#">BHAD BHABIE</a></h1><h2 class="supports description"><a href="#">Asian Doll</a></h2>        <h2 class="dates">Sunday 6/3</h2>
+              <h2 class="times">
+  <span class="start dtstart"><span class="value-title" title="2018-06-03T20:00:00-07:00"></span>8:00 pm</span> </h2>
+  
+  					  <h2 class="age-restriction all-ages">
+			This event is all ages					  </h2>
+			<h2 class="more-info"><a class="url" href="#">More Info</a></h2>
+          </div>
+		<div class="ticket-price">
+                   <h3 class="ticket-link primary-link"><a class="tickets" href="#" onclick="return tfly_openWindowGA(this);" target="_blank">Tickets</a></h3>
+					       <h3 class="price-range">
+			 $19.00 - $125.00       </h3>
+	      </div>
+    </div>
+    <div class="list-view-item tfly-event-id-1645499 tfly-org-id-6823 tfly-venue-id-1233">
+<a href="event/1645499-okkervil-river-seattle/index.html"><img src="images/16-og.jpg?w=500&h=332" width="500" height="332" alt="Okkervil River" title="Okkervil River" /></a>
+      <div class="list-view-details vevent">
+<h2 class="topline-info">KEXP & Neumos Present</h2> <h1 class="headliners summary"><a href="#">Okkervil River</a></h1>
+					  <h2 class="supports description"><a href="#">Benjamin Lazar Davis</a></h2>        <h2 class="dates">Monday 6/4</h2>
+              <h2 class="times">
+  <span class="start dtstart"><span class="value-title" title="2018-06-04T20:00:00-07:00"></span>8:00 pm</span> </h2>
+  
+  					  <h2 class="age-restriction over-21">
+			This event is 21 and over					  </h2>
+			<h2 class="more-info"><a class="url" href="#">More Info</a></h2>
+          </div>
+		<div class="ticket-price">
+                   <h3 class="ticket-link primary-link"><a class="tickets" href="#" onclick="return tfly_openWindowGA(this);" target="_blank">Tickets</a></h3>
+					       <h3 class="price-range">
+			 $20.00 - $23.00       </h3>
+	      </div>
+    </div>
+    <div class="list-view-item alt tfly-event-id-1667246 tfly-org-id-6823 tfly-venue-id-1233">
+<a href="#"><img src="images/59-og.jpg?w=500&h=333" width="500" height="333" alt="Eric Nam" title="Eric Nam" /></a>
+      <div class="list-view-details vevent">
+<h2 class="topline-info">STG Presents</h2> <h1 class="headliners summary"><a href="#">Eric Nam</a></h1>
+					  <h2 class="supports description"><a href="#">Loote</a></h2>        <h2 class="dates">Sunday 6/10</h2>
+              <h2 class="times">
+  <span class="start dtstart"><span class="value-title" title="2018-06-10T19:00:00-07:00"></span>7:00 pm</span> </h2>
+  
+  					  <h2 class="age-restriction all-ages">
+			This event is all ages					  </h2>
+			<h2 class="more-info"><a class="url" href="#">More Info</a></h2>
+          </div>
+		<div class="ticket-price">
+                   <h3 class="ticket-link primary-link"><a class="tickets" href="#" onclick="return tfly_openWindowGA(this);" target="_blank">Tickets</a></h3>
+					       <h3 class="price-range">
+			 $25.00 - $125.00       </h3>
+	      </div>
+    </div>
+    <div class="list-view-item tfly-event-id-1653640 tfly-org-id-6823 tfly-venue-id-1233">
+<a href="#"><img src="images/85-og.jpg?w=500&h=333" width="500" height="333" alt="Louis Futon" title="Louis Futon" /></a>
+      <div class="list-view-details vevent">
+<h2 class="topline-info">Neumos Presents</h2> <h1 class="headliners summary"><a href="#">Louis Futon</a></h1>
+					  <h2 class="supports description"><a href="#">Samurai Del</a></h2>        <h2 class="dates">Thursday 6/21</h2>
+              <h2 class="times">
+  <span class="start dtstart"><span class="value-title" title="2018-06-21T20:00:00-07:00"></span>8:00 pm</span> </h2>
+  
+  					  <h2 class="age-restriction all-ages">
+			This event is all ages					  </h2>
+			<h2 class="more-info"><a class="url" href="#">More Info</a></h2>
+          </div>
+		<div class="ticket-price">
+                   <h3 class="ticket-link primary-link"><a class="tickets" href="#" onclick="return tfly_openWindowGA(this);" target="_blank">Tickets</a></h3>
+					       <h3 class="price-range">
+			 $13.00 - $15.00       </h3>
+	      </div>
+    </div>
+    <div class="list-view-item alt tfly-event-id-1674286 tfly-org-id-6823 tfly-venue-id-1233">
+<a href="#"><img src="images/14-og.jpg?w=500&h=333" width="500" height="333" alt="Protoje &amp; The Indignation" title="Protoje &amp; The Indignation" /></a>
+      <div class="list-view-details vevent">
+<h2 class="topline-info">Soul'd Out Presents</h2> <h1 class="headliners summary"><a href="#">Protoje & The Indignation</a></h1>
+					          <h2 class="dates">Monday 6/25</h2>
+              <h2 class="times">
+  <span class="start dtstart"><span class="value-title" title="2018-06-25T20:00:00-07:00"></span>8:00 pm</span> </h2>
+  
+  					  <h2 class="age-restriction over-21">
+			This event is 21 and over					  </h2>
+			<h2 class="more-info"><a class="url" href="#">More Info</a></h2>
+          </div>
+		<div class="ticket-price">
+                   <h3 class="ticket-link primary-link"><a class="tickets" href="#" onclick="return tfly_openWindowGA(this);" target="_blank">Tickets</a></h3>
+					       <h3 class="price-range">
+			 $23.50       </h3>
+	      </div>
+    </div>
+    <div class="list-view-item tfly-event-id-1673607 tfly-org-id-6823 tfly-venue-id-1233">
+<a href="#"><img src="images/05-og.jpg?w=500&h=333" width="500" height="333" alt="The Get Up Kids" title="The Get Up Kids" /></a>
+      <div class="list-view-details vevent">
+<h2 class="topline-info">Showbox Presents</h2> <h1 class="headliners summary"><a href="#">The Get Up Kids</a></h1>
+					  <h2 class="supports description"><a href="#">The Casket Lottery</a></h2>        <h2 class="dates">Tuesday 6/26</h2>
+              <h2 class="times">
+  <span class="start dtstart"><span class="value-title" title="2018-06-26T19:30:00-07:00"></span>7:30 pm</span> </h2>
+  
+  					  <h2 class="age-restriction all-ages">
+			This event is all ages					  </h2>
+			<h2 class="more-info"><a class="url" href="#">More Info</a></h2>
+          </div>
+		<div class="ticket-price">
+                   <h3 class="ticket-link primary-link"><a class="tickets" href="#" onclick="return tfly_openWindowGA(this);" target="_blank">Tickets</a></h3>
+					       <h3 class="price-range">
+			 $25.00 - $29.00       </h3>
+	      </div>
+    </div>
+    <div class="list-view-item alt tfly-event-id-1669274 tfly-org-id-6823 tfly-venue-id-1233">
+<a href="#"><img src="images/53-og.JPG?w=500&h=333" width="500" height="333" alt="Electric Six" title="Electric Six" /></a>
+      <div class="list-view-details vevent">
+<h2 class="topline-info">Neumos Presents</h2> <h1 class="headliners summary"><a href="#">Electric Six</a></h1>
+					  <h2 class="supports description"><a href="#">Mark Mallman</a></h2>        <h2 class="dates">Saturday 7/7</h2>
+              <h2 class="times">
+  <span class="start dtstart"><span class="value-title" title="2018-07-07T20:00:00-07:00"></span>8:00 pm</span> </h2>
+  
+  					  <h2 class="age-restriction over-21">
+			This event is 21 and over					  </h2>
+			<h2 class="more-info"><a class="url" href="#">More Info</a></h2>
+          </div>
+		<div class="ticket-price">
+                   <h3 class="ticket-link primary-link"><a class="tickets" href="#" onclick="return tfly_openWindowGA(this);" target="_blank">Tickets</a></h3>
+					       <h3 class="price-range">
+			 $13.00 - $15.00       </h3>
+	      </div>
+    </div>
+    <div class="list-view-item tfly-event-id-1637941 tfly-org-id-6823 tfly-venue-id-1233">
+<a href="#"><img src="images/31-og.JPG?w=500&h=333" width="500" height="333" alt="Wye Oak" title="Wye Oak" /></a>
+      <div class="list-view-details vevent">
+<h2 class="topline-info">KEXP & Neumos Present</h2> <h1 class="headliners summary"><a href="#">Wye Oak</a></h1>
+					          <h2 class="dates">Sunday 7/15</h2>
+              <h2 class="times">
+  <span class="start dtstart"><span class="value-title" title="2018-07-15T20:00:00-07:00"></span>8:00 pm</span> </h2>
+  
+  					  <h2 class="age-restriction over-21">
+			This event is 21 and over					  </h2>
+			<h2 class="more-info"><a class="url" href="#">More Info</a></h2>
+          </div>
+		<div class="ticket-price">
+                   <h3 class="ticket-link primary-link"><a class="tickets" href="#" onclick="return tfly_openWindowGA(this);" target="_blank">Tickets</a></h3>
+					       <h3 class="price-range">
+			 $18.00 - $20.00       </h3>
+	      </div>
+    </div>
+    <div class="list-view-item alt tfly-event-id-1635220 tfly-org-id-6823 tfly-venue-id-1233">
+<a href="#"><img src="images/76-og.jpg?w=500&h=333" width="500" height="333" alt="The Melvins" title="The Melvins" /></a>
+      <div class="list-view-details vevent">
+<h2 class="topline-info">Showbox Presents</h2> <h1 class="headliners summary"><a href="#">Sold Out: The Melvins</a></h1>
+					          <h2 class="dates">Thursday 7/19</h2>
+              <h2 class="times">
+  <span class="start dtstart"><span class="value-title" title="2018-07-19T19:30:00-07:00"></span>7:30 pm</span> </h2>
+  
+  					  <h2 class="age-restriction all-ages">
+			This event is all ages					  </h2>
+			<h2 class="more-info"><a class="url" href="#">More Info</a></h2>
+          </div>
+		<div class="ticket-price">
+<h3 class="ticket-link lyte-link"><a class="tickets" href="#"  target="_blank">Find fan tickets</a></h3>       <h3 class="price-range">
+			 $29.50       </h3>
+	      </div>
+    </div>
+    <div class="list-view-item tfly-event-id-1670226 tfly-org-id-6823 tfly-venue-id-1233">
+<a href="#"><img src="images/41-og.jpg?w=500&h=331" width="500" height="331" alt="SALES" title="SALES" /></a>
+      <div class="list-view-details vevent">
+<h2 class="topline-info">Neumos Presents</h2><h1 class="headliners summary"><a href="#">SALES</a></h1><h2 class="supports description"><a href="#">No Vacation</a></h2>        <h2 class="dates">Saturday 8/25</h2>
+              <h2 class="times">
+  <span class="start dtstart"><span class="value-title" title="2018-08-25T20:00:00-07:00"></span>8:00 pm</span> </h2>
+  
+  					  <h2 class="age-restriction all-ages">
+			This event is all ages					  </h2>
+			<h2 class="more-info"><a class="url" href="#">More Info</a></h2>
+          </div>
+		<div class="ticket-price">
+                   <h3 class="ticket-link primary-link"><a class="tickets" href="#" onclick="return tfly_openWindowGA(this);" target="_blank">Tickets</a></h3>
+					       <h3 class="price-range">
+			 $18.00 - $20.00       </h3>
+	      </div>
+    </div>
+    <div class="list-view-item alt tfly-event-id-1671796 tfly-org-id-6823 tfly-venue-id-1233">
+<a href="#"><img src="images/84-og.jpg?w=500&h=333" width="500" height="333" alt="The Midnight" title="The Midnight" /></a>
+      <div class="list-view-details vevent">
+<h2 class="topline-info">Neumos Presents</h2> <h1 class="headliners summary"><a href="#l">The Midnight</a></h1>
+					          <h2 class="dates">Friday 9/28</h2>
+              <h2 class="times">
+  <span class="start dtstart"><span class="value-title" title="2018-09-28T20:00:00-07:00"></span>8:00 pm</span> </h2>
+  
+  					  <h2 class="age-restriction all-ages">
+			This event is all ages					  </h2>
+			<h2 class="more-info"><a class="url" href="#">More Info</a></h2>
+          </div>
+		<div class="ticket-price">
+                   <h3 class="ticket-link primary-link"><a class="tickets" href="#" onclick="return tfly_openWindowGA(this);" target="_blank">Tickets</a></h3>
+					       <h3 class="price-range">
+			 $18.00 - $20.00       </h3>
+	      </div>
+    </div>
+    <div class="list-view-item tfly-event-id-1653651 tfly-org-id-6823 tfly-venue-id-1233">
+<a href="#"><img src="images/84-og.jpg?w=500&h=333" width="500" height="333" alt="Oh Sees" title="Oh Sees" /></a>
+      <div class="list-view-details vevent">
+<h2 class="topline-info">Neumos Presents</h2> <h1 class="headliners summary"><a href="#">Oh Sees</a></h1>
+					          <h2 class="dates">Saturday 10/6</h2>
+              <h2 class="times">
+  <span class="start dtstart"><span class="value-title" title="2018-10-06T20:00:00-07:00"></span>8:00 pm</span> </h2>
+  
+  					  <h2 class="age-restriction all-ages">
+			This event is all ages					  </h2>
+			<h2 class="more-info"><a class="url" href="#">More Info</a></h2>
+          </div>
+		<div class="ticket-price">
+                   <h3 class="ticket-link primary-link"><a class="tickets" href="#" onclick="return tfly_openWindowGA(this);" target="_blank">Tickets</a></h3>
+					       <h3 class="price-range">
+			 $18.00 - $20.00       </h3>
+	      </div>
+    </div>
+    <div class="list-view-item alt tfly-event-id-1653653 tfly-org-id-6823 tfly-venue-id-1233">
+<a href="#"><img src="images/87-og.jpg?w=500&h=333" width="500" height="333" alt="Oh Sees" title="Oh Sees" /></a>
+      <div class="list-view-details vevent">
+<h2 class="topline-info">Neumos Presents</h2> <h1 class="headliners summary"><a href="#">Oh Sees</a></h1>
+					          <h2 class="dates">Sunday 10/7</h2>
+              <h2 class="times">
+  <span class="start dtstart"><span class="value-title" title="2018-10-07T20:00:00-07:00"></span>8:00 pm</span> </h2>
+  
+  					  <h2 class="age-restriction all-ages">
+			This event is all ages					  </h2>
+			<h2 class="more-info"><a class="url" href="#">More Info</a></h2>
+          </div>
+		<div class="ticket-price">
+                   <h3 class="ticket-link primary-link"><a class="tickets" href="#" onclick="return tfly_openWindowGA(this);" target="_blank">Tickets</a></h3>
+					       <h3 class="price-range">
+			 $18.00 - $20.00       </h3>
+	      </div>
+    </div>
+
+</div>
+
+<style>#wrapper .list-view .tfly-event-id-1499692,#wrapper .list-view .tfly-event-id-1499694 {display:none;}</style>
+			</div><!-- .entry-content -->
+	</article><!-- #post-## -->
+			
+		</main><!-- #main -->
+	</div><!-- #primary -->
+
+
+<div id="secondary" class="widget-area" role="complementary">
+	<aside id="text-4" class="widget widget_text"><h2 class="widget-title">Just Announced</h2>			<div class="textwidget">
+		<div class="sidebar-list just-announced">
+							<ul>
+								<li class="tfly-event-id-1673607 tfly-org-id-6823 tfly-venue-id-1233"><a href="#">The Get Up Kids - 6/26																                </a></li>
+								<li class="tfly-event-id-1671796 tfly-org-id-6823 tfly-venue-id-1233"><a href="event/1671796-midnight-seattle/index.html">The Midnight - 9/28																                </a></li>
+								<li class="tfly-event-id-1667246 tfly-org-id-6823 tfly-venue-id-1233"><a href="#">Eric Nam - 6/10																                </a></li>
+								<li class="tfly-event-id-1670226 tfly-org-id-6823 tfly-venue-id-1233"><a href="#">SALES - 8/25																                </a></li>
+								<li class="tfly-event-id-1674286 tfly-org-id-6823 tfly-venue-id-1233"><a href="#">Protoje & The Indignation - 6/25																                </a></li>
+								<li class="tfly-event-id-1673713 tfly-org-id-6823 tfly-venue-id-1233"><a href="#">Erik Blood + Shit Ghost - 5/24																                </a></li>
+								<li class="tfly-event-id-1669183 tfly-org-id-6823 tfly-venue-id-1233"><a href="#">Joyner Lucas - 5/23																                </a></li>
+								<li class="tfly-event-id-1669274 tfly-org-id-6823 tfly-venue-id-1233"><a href="#">Electric Six - 7/07																                </a></li>
+								<li class="tfly-event-id-1654121 tfly-org-id-6823 tfly-venue-id-1233"><a href="#">CupcakKe - 4/22																                </a></li>
+								<li class="tfly-event-id-1668167 tfly-org-id-6823 tfly-venue-id-1233"><a href="#">The BGP - Release Party! - 5/10																                </a></li>
+							</ul>
+            		</div>
+</div>
+		</aside></div><!-- #secondary -->
+
+	</div><!-- #content -->
+  
+</div><!-- #page -->
+
+  <div id="footer">
+    <div id="wrapper">
+    	<div class="footer-content">
+      
+                <div id="footer-widgets">
+          <aside id="text-11" class="widget widget_text">			<div class="textwidget">925 E. PIKE ST. SEATTLE, WA 98122 &nbsp;&nbsp;&nbsp;&nbsp;<a href="#">INFO@NEUMOS.COM</a>&nbsp;&nbsp;&nbsp;&nbsp;<a href="#">PRIVACY POLICY</a><br>
+<br>&nbsp;
+<a href="#" target="_new"><i class="fa fa-facebook socialbeep" aria-hidden="true"></i></a>&nbsp;&nbsp;&nbsp;<a href="#" target="_new"><i class="fa fa-twitter" aria-hidden="true"></i></a>&nbsp;&nbsp;&nbsp;<a href="#"><i class="fa fa-instagram" aria-hidden="true" target="_new"></i></a>
+<br>&nbsp;<br></div>
+		</aside><aside id="widget_sp_image-2" class="widget widget_sp_image"><a href="#" id="" target="_self" class="widget_sp_image-image-link" title="" rel=""><img width="200" height="38" alt="" class="attachment-200x38 aligncenter" style="max-width: 100%;" src="files/2016/10/logo.png" /></a></aside>          </div>
+            
+        
+    	</div><!-- .footer-content -->
+  	</div>
+  </div><!-- #footer -->
+
+    <div class="tfly-powered"><a href="#"><span class="icon-ticketfly_powered_logo_white"></span></a></div>
+
+<script type="application/ld+json">
+{
+  "@context": "http://schema.org",
+  "@type": "WebSite",
+  "url": "https://www.neumos.com/",
+  "potentialAction": {
+    "@type": "SearchAction",
+    "target": "https://www.neumos.com/listing/?q={search_term_string}",
+    "query-input": "required name=search_term_string"
+  }
+}
+</script>
+
+<script type='text/javascript' src='wp-content/themes/neumos/js/custom.js'></script>
+<script type='text/javascript' src='wp-content/themes/neumos/js/navigation.js'></script>
+<script type='text/javascript' src='wp-content/themes/neumos/js/skip-link-focus-fix.js'></script>
+<script type='text/javascript' src='wp-content/plugins/wp-jquery-lightbox/jquery.touchwipe.min.js'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var JQLBSettings = {"showTitle":"1","showCaption":"1","showNumbers":"1","fitToScreen":"1","resizeSpeed":"400","showDownload":"0","navbarOnTop":"0","marginSize":"40","slideshowSpeed":"4000","prevLinkTitle":"previous image","nextLinkTitle":"next image","closeTitle":"close image gallery","image":"Image ","of":" of ","download":"Download","pause":"(pause slideshow)","play":"(play slideshow)"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='wp-content/plugins/wp-jquery-lightbox/jquery.lightbox.min.js?ver=1.4.6'></script>
+<script type='text/javascript' src='wp-includes/js/wp-embed.min.js'></script>
+
+<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"c165d52f09","applicationID":"31112467","transactionName":"NVRSMUBZWhVRBRBeXgwecQZGUVsIHxYFUFQ=","queueTime":0,"applicationTime":277,"atts":"GRNRRwhDSRs=","errorBeacon":"bam.nr-data.net","agent":""}</script></body>
+</html>
