@@ -1153,7 +1153,7 @@ Site Header
 	background-size: contain !important;
 	display: block;
 	height: 76px;
-	text-indent: -9999px;
+	color: transparent!important;
 }
 
 .header-image .dark .site-title > a {

@@ -1,0 +1,40 @@
+#buddypress .bp-widget {
+	box-sizing: border-box;
+	float: left;
+	padding-right: 5%;
+	width: 33%;
+}
+
+#buddypress div.profile h4 {
+	border-bottom: 1px solid #eee;
+	margin-bottom: 15px;
+}
+
+#buddypress .profile-fields {
+	list-style-type: none;
+}
+
+#buddypress .profile-fields > li {
+	line-height: 36px;
+	margin: 0;
+	padding-left: 5px;
+}
+
+#buddypress .profile-fields > li:nth-child(odd) {
+	background: #eee;
+}
+
+#buddypress div.label,
+#buddypress div.data {
+	display: inline-block;
+}
+
+#buddypress div.label {
+	font-weight: bold;
+	padding-right: 20px;
+	width: 25%;
+}
+
+#buddypress div.data p {
+	margin: 0;
+}

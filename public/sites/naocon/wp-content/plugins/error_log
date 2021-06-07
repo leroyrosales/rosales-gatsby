@@ -1,0 +1,14 @@
+[13-Feb-2016 10:06:00 America/Denver] PHP Fatal error:  Call to undefined function add_action() in /home8/naoconor/public_html/wp-content/plugins/hello.php on line 60
+[13-Feb-2016 10:06:08 America/Denver] PHP Fatal error:  Call to undefined function add_action() in /home8/naoconor/public_html/wp-content/plugins/hello.php on line 60
+[13-Feb-2016 10:24:33 America/Denver] PHP Fatal error:  Call to undefined function add_action() in /home8/naoconor/public_html/wp-content/plugins/hello.php on line 60
+[13-Feb-2016 10:24:40 America/Denver] PHP Fatal error:  Call to undefined function add_action() in /home8/naoconor/public_html/wp-content/plugins/hello.php on line 60
+[04-Mar-2016 05:16:47 America/Denver] PHP Fatal error:  Call to undefined function add_action() in /home8/naoconor/public_html/wp-content/plugins/hello.php on line 60
+[04-Mar-2016 05:25:19 America/Denver] PHP Fatal error:  Call to undefined function add_action() in /home8/naoconor/public_html/wp-content/plugins/hello.php on line 60
+[27-Apr-2016 19:26:05 America/Denver] PHP Fatal error:  Call to undefined function add_action() in /home8/naoconor/public_html/wp-content/plugins/hello.php on line 60
+[27-Apr-2016 19:44:59 America/Denver] PHP Fatal error:  Call to undefined function add_action() in /home8/naoconor/public_html/wp-content/plugins/hello.php on line 60
+[27-Apr-2016 19:45:01 America/Denver] PHP Fatal error:  Call to undefined function add_action() in /home8/naoconor/public_html/wp-content/plugins/hello.php on line 60
+[27-Apr-2016 19:45:11 America/Denver] PHP Fatal error:  Call to undefined function add_action() in /home8/naoconor/public_html/wp-content/plugins/hello.php on line 60
+[03-Aug-2019 17:03:28 America/Chicago] PHP Warning:  Version warning: Imagick was compiled against Image Magick version 1657 but version 1650 is loaded. Imagick will run but may behave surprisingly in Unknown on line 0
+[03-Aug-2019 17:09:48 America/Chicago] PHP Warning:  Version warning: Imagick was compiled against Image Magick version 1657 but version 1650 is loaded. Imagick will run but may behave surprisingly in Unknown on line 0
+[03-Aug-2019 17:22:10 America/Chicago] PHP Warning:  Version warning: Imagick was compiled against Image Magick version 1657 but version 1650 is loaded. Imagick will run but may behave surprisingly in Unknown on line 0
+[03-Aug-2019 20:41:33 America/Chicago] PHP Warning:  Version warning: Imagick was compiled against Image Magick version 1657 but version 1650 is loaded. Imagick will run but may behave surprisingly in Unknown on line 0
